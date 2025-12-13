@@ -54,7 +54,7 @@ export default async function SinglePost(
                     href="/blog"
                   >
                     <span className="tracking-normal text-blue-300">&lt;-</span>{" "}
-                    Back To Blog
+                    Volver al blog
                   </Link>
                 </div>
                 <h1 className="mb-5 text-5xl font-bold">

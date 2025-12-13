@@ -8,31 +8,41 @@ export default function Header() {
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
-          {/* Site branding */}
+          {/* Branding */}
           <div className="flex flex-1 items-center">
             <Logo />
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
-            {/* Desktop menu links */}
             <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
+              <li className="px-3 py-1">
+                <Link
+                  href="/about"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                >
+                  Nosotros
+                </Link>
+              </li>
+
               <li className="px-3 py-1">
                 <Link
                   href="/pricing"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Pricing
+                  Programas
                 </Link>
               </li>
+
               <li className="px-3 py-1">
                 <Link
                   href="/customers"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Customers
+                  Testimonios
                 </Link>
               </li>
+
               <li className="px-3 py-1">
                 <Link
                   href="/blog"
@@ -41,53 +51,59 @@ export default function Header() {
                   Blog
                 </Link>
               </li>
-              <li className="px-3 py-1">
-                <Link
-                  href="/documentation"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Docs
-                </Link>
-              </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Extra">
-                {/* 2nd level: hover */}
+
+              {/* Dropdown */}
+              <Dropdown title="Recursos">
                 <li>
                   <Link
                     href="/support"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Support center
+                    Soporte
                   </Link>
                 </li>
+
                 <li>
                   <Link
-                    href="/apps"
+                    href="/courses"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Apps
+                    Cursos
                   </Link>
+                </li>
+
+                {/* NUEVO: CriptApp (externo) */}
+                <li>
+                  <a
+                    href="https://criptapp.com.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    <span>Casa de Cambio</span>
+
+                  </a>
                 </li>
               </Dropdown>
             </ul>
           </nav>
 
-          {/* Desktop sign in links */}
+          {/* Sign in buttons */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
                 href="/signin"
                 className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
-                Login
+                Acceder
               </Link>
             </li>
             <li>
               <Link
-                href="/signup"
+                href="/pricing"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                Register
+                Comenzar
               </Link>
             </li>
           </ul>
@@ -98,3 +114,5 @@ export default function Header() {
     </header>
   );
 }
+
+

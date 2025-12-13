@@ -12,7 +12,7 @@ export default function Hamburger() {
       aria-expanded={sidebarOpen}
       onClick={() => setSidebarOpen((prevState) => !prevState)}
     >
-      <span className="sr-only">Menu</span>
+      <span className="sr-only">Menú</span>
       <svg
         className="pointer-events-none fill-current"
         width={16}

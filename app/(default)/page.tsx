@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "SR Academy | Trading Profesional con Psicología y Confirmación Real",
+  description:
+    "Aprende trading de forma estructurada con psicología aplicada, gestión real de riesgo y estrategias probadas. +2.000 traders formados en más de 60 países.",
 };
 
 import Hero from "@/components/hero-home";
@@ -11,16 +12,24 @@ import Features from "@/components/features-home";
 import TestimonialsCarousel from "@/components/testimonials-carousel";
 import Cta from "@/components/cta";
 
+// 🚀 nuevos
+import SectionPainPoints from "@/components/section-pain-points";
+import SectionGuarantees from "@/components/section-guarantees";
+
+
 export default function Home() {
   return (
     <>
       <Hero />
       <BusinessCategories />
+      <SectionPainPoints />
       <LargeTestimonial />
       <FeaturesPlanet />
       <Features />
+      <SectionGuarantees />
       <TestimonialsCarousel />
       <Cta />
     </>
   );
 }
+

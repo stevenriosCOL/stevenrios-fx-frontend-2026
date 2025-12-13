@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Pricing - Simple",
-  description: "Page description",
+  title: "Planes y Precios – SR Academy",
+  description: "Elige el plan perfecto para tu nivel: Academy, Professional, Master y Elite. Compara beneficios y empieza tu transformación en el trading.",
 };
 
 import PricingTables from "@/components/pricing-tables";
@@ -18,9 +18,9 @@ export default function Pricing() {
       <Faqs />
       <Cta
         className="overflow-hidden"
-        heading="Create your next project with Simple"
-        buttonText="Start Free Trial"
-        buttonLink="#0"
+        heading="¿Listo para transformar tu trading?"
+        buttonText="Si, quiero empezar mi transformación"
+        buttonLink="/pricing"
       />
     </>
   );

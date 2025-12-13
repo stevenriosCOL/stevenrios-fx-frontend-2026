@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Customers - Simple",
-  description: "Page description",
+  title: "Testimonios Reales – SR Academy",
+  description: "Descubre historias reales de estudiantes que transformaron su trading con SR Academy. Resultados, experiencias y opiniones verificadas.",
 };
 
 import Hero from "./hero";
@@ -13,9 +13,9 @@ export default function Customers() {
       <Hero />
       <WallOfLove />
       <Cta
-        heading="Create your next project with Simple"
-        buttonText="Start Free Trial"
-        buttonLink="#0"
+        heading="¿Listo para transformar tu trading?"
+        buttonText="Sí, quiero empezar mi transformación"
+        buttonLink="/pricing"
       />
     </>
   );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+import TestimonialImg from "@/public/images/testimonial-01.jpg";
 
 export default function LargeTestimonial() {
   return (
@@ -26,21 +26,17 @@ export default function LargeTestimonial() {
                 src={TestimonialImg}
                 width={48}
                 height={48}
-                alt="Large testimonial"
+                alt="Manuel Romero"
               />
             </div>
             <p className="text-2xl font-bold text-gray-900">
-              “Simple has simplified my life in more ways than one. From
-              managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
-              it's become my go-to tool for everything.”
+              "Hace 6 meses comencé en trading y sin duda el haberme topado con tu manera de ver el mercado{" "}
+              <em className="italic text-gray-500">aceleró exponencialmente mi curva de aprendizaje</em>. Cuando hice el intensivo te dije que ese era el último intento... Pues resultó exactamente lo que esperaba y más."
             </p>
             <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
+              <span className="text-gray-700">Manuel Romero Álvarez</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                CTO at Microsoft
-              </a>
+              <span className="text-blue-500">México - Maestría de Trading</span>
             </div>
           </div>
         </div>

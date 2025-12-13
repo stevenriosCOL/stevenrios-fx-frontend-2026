@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Support - Simple",
-  description: "Page description",
+  title: "Soporte y Ayuda – SR Academy",
+  description:
+    "Encuentra respuestas, soporte técnico, ayuda con tus cursos, accesos, pagos y todo lo relacionado con tu formación en trading y finanzas.",
 };
 
 import Hero from "./hero";
@@ -14,10 +15,12 @@ export default function Support() {
       <Faqs />
       <Cta
         className="overflow-hidden"
-        heading="Cannot find what you're looking for?"
-        buttonText="Contact Us"
-        buttonLink="#0"
+        heading="¿No encontraste lo que buscabas?"
+        buttonText="Hablar con Soporte"
+        buttonLink="https://wa.link/t9ntsl"
       />
     </>
   );
 }
+
+

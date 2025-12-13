@@ -2,7 +2,7 @@ export default function Newsletter() {
   return (
     <div className="mt-10 border-t border-gray-200 pt-10 text-center md:text-left">
       <h3 className="mb-6 text-lg font-bold md:mb-8">
-        Get all of our updates directly to your inbox.
+        Recibe todas nuestras actualizaciones directamente en tu bandeja de entrada.
       </h3>
       <form>
         <div className="mx-auto flex max-w-sm flex-col justify-center sm:max-w-none sm:flex-row md:justify-start">
@@ -21,15 +21,15 @@ export default function Newsletter() {
             <input
               type="email"
               className="form-input w-full pl-10"
-              placeholder="Your email..."
-              aria-label="Your email"
+              placeholder="Tu correo electrónico..."
+              aria-label="Tu correo electrónico"
             />
           </div>
           <button
             className="btn whitespace-nowrap bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]"
             type="submit"
           >
-            Subscribe
+            Subscribirse
           </button>
         </div>
       </form>

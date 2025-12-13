@@ -20,7 +20,7 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
           <form className="border-b border-gray-200">
             <div className="flex items-center">
               <label htmlFor="search-modal" className="sr-only">
-                Search
+                Buscar
               </label>
               <svg
                 className="ml-4 h-4 w-4 shrink-0 fill-gray-500"
@@ -36,10 +36,12 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
                 data-autofocus
                 className="w-full appearance-none border-0 bg-white py-3 pl-2 pr-4 text-sm placeholder-gray-400 focus:ring-transparent"
                 type="search"
-                placeholder="Search for anything…"
+                placeholder="Busca cursos, accesos o soluciones…"
               />
             </div>
           </form>
+
+          {/* Suggested results */}
           <div className="p-2">
             <ul>
               <li>
@@ -55,9 +57,10 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
                   >
                     <path d="M11.953 4.29a.5.5 0 0 0-.454-.292H6.14L6.984.62A.5.5 0 0 0 6.12.173l-6 7a.5.5 0 0 0 .379.825h5.359l-.844 3.38a.5.5 0 0 0 .864.445l6-7a.5.5 0 0 0 .075-.534Z" />
                   </svg>
-                  <span>Alternative Schemas</span>
+                  <span>Acceder a mis cursos</span>
                 </Link>
               </li>
+
               <li>
                 <Link
                   className="flex items-center rounded-lg px-2 py-1 text-sm leading-6 text-gray-700 outline-hidden focus-within:bg-gray-100 hover:bg-gray-100"
@@ -71,9 +74,10 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
                   >
                     <path d="M11.953 4.29a.5.5 0 0 0-.454-.292H6.14L6.984.62A.5.5 0 0 0 6.12.173l-6 7a.5.5 0 0 0 .379.825h5.359l-.844 3.38a.5.5 0 0 0 .864.445l6-7a.5.5 0 0 0 .075-.534Z" />
                   </svg>
-                  <span>Query string parameters</span>
+                  <span>Problemas con acceso o contraseña</span>
                 </Link>
               </li>
+
               <li>
                 <Link
                   className="flex items-center rounded-lg px-2 py-1 text-sm leading-6 text-gray-700 outline-hidden focus-within:bg-gray-100 hover:bg-gray-100"
@@ -87,9 +91,10 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
                   >
                     <path d="M11.953 4.29a.5.5 0 0 0-.454-.292H6.14L6.984.62A.5.5 0 0 0 6.12.173l-6 7a.5.5 0 0 0 .379.825h5.359l-.844 3.38a.5.5 0 0 0 .864.445l6-7a.5.5 0 0 0 .075-.534Z" />
                   </svg>
-                  <span>Integrations</span>
+                  <span>Información de membresías y planes</span>
                 </Link>
               </li>
+
               <li>
                 <Link
                   className="flex items-center rounded-lg px-2 py-1 text-sm leading-6 text-gray-700 outline-hidden focus-within:bg-gray-100 hover:bg-gray-100"
@@ -103,7 +108,24 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
                   >
                     <path d="M11.953 4.29a.5.5 0 0 0-.454-.292H6.14L6.984.62A.5.5 0 0 0 6.12.173l-6 7a.5.5 0 0 0 .379.825h5.359l-.844 3.38a.5.5 0 0 0 .864.445l6-7a.5.5 0 0 0 .075-.534Z" />
                   </svg>
-                  <span>Organize Contacts with Tags</span>
+                  <span>Pagos, facturación y soporte</span>
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  className="flex items-center rounded-lg px-2 py-1 text-sm leading-6 text-gray-700 outline-hidden focus-within:bg-gray-100 hover:bg-gray-100"
+                  href="#0"
+                >
+                  <svg
+                    className="mr-3 h-3 w-3 shrink-0 fill-gray-400"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                  >
+                    <path d="M11.953 4.29a.5.5 0 0 0-.454-.292H6.14L6.984.62A.5.5 0 0 0 6.12.173l-6 7a.5.5 0 0 0 .379.825h5.359l-.844 3.38a.5.5 0 0 0 .864.445l6-7a.5.5 0 0 0 .075-.534Z" />
+                  </svg>
+                  <span>¿Dónde ver mis clases en vivo?</span>
                 </Link>
               </li>
             </ul>
@@ -113,3 +135,4 @@ export default function SearchModal({ isOpen, setIsOpen }: SearchModalProps) {
     </Dialog>
   );
 }
+

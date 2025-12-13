@@ -10,7 +10,7 @@ export default function SecondaryNav() {
       {links.length > 0 && (
         <aside className="ml-6 w-60 shrink-0 max-md:hidden">
           <nav className="sticky top-24 border-l border-r p-5 [border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.5),transparent)1]">
-            <div className="font-bold">On this page</div>
+            <div className="font-bold">En esta página</div>
             <ul className="mt-2 space-y-2 text-sm">
               {links.map((link, linkIndex) => (
                 <li key={linkIndex}>

@@ -8,50 +8,53 @@ export default function TestimonialsCarousel() {
   const testimonials = [
     {
       img: TestimonialImg01,
-      name: "Peter Lowe",
-      username: "@peterlowex",
-      date: "May 19, 2027",
+      name: "Andrea Rodríguez",
+      username: "@andrea_trading",
+      date: "Nov 2024",
       content:
-        "As a founder, having a visually appealing and user-friendly website is essential. This tool not only helped me achieve that but also improved my site's performance and SEO.",
-      channel: "Twitter",
+        "La maestría estuvo increíble! #TOPSECRETSGOLD super valiosos. Realmente Steven comparte información que nadie más da. Vale cada peso invertido.",
+      channel: "Maestría SR",
     },
     {
       img: TestimonialImg02,
-      name: "Rodri Alba",
-      username: "@rodri_spn",
-      date: "Apr 12, 2027",
+      name: "Rodrigo Calderón",
+      username: "@rodri_trader",
+      date: "Oct 2024",
       content:
-        "Simple has revolutionized the way I manage my work. Its intuitive interface and seamless functionality make staying organized effortless. I can't imagine my life without it.",
-      channel: "Twitter",
+        "El intensivo superó mis expectativas. Steven es un destructor de paradigmas. Me hizo replantear todo lo que creía saber sobre trading.",
+      channel: "Intensivo SR",
     },
     {
       img: TestimonialImg03,
-      name: "Michele Lex",
-      username: "@MikyBrown",
-      date: "Mar 04, 2027",
+      name: "Victory Restrepo",
+      username: "@victory_fx",
+      date: "Sep 2024",
       content:
-        "I've tried several website builders before, but none were as user-friendly and versatile as this one. From design to functionality, it exceeded my expectations!",
-      channel: "Twitter",
+        "80% de los análisis se cumplen. No es humo, son resultados reales. Finalmente encontré una academia que cumple lo que promete.",
+      channel: "0a6cifras",
     },
     {
       img: TestimonialImg04,
-      name: "Michael Ross",
-      username: "@michjack",
-      date: "Jan 15, 2027",
+      name: "Julián González",
+      username: "@julian_gold",
+      date: "Ago 2024",
       content:
-        "Simple lives up to its name in every way. It's incredibly easy to use yet powerful enough to handle all my tasks effortlessly. It's become an essential part of my daily routine.",
-      channel: "Twitter",
+        "Esto es otro nivel. No solo enseña patrones sino CUÁNDO buscarlos. Esa diferencia lo cambia todo en tu operativa.",
+      channel: "Intensivo SR",
     },
   ];
 
   return (
-    <section className="relative before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:h-[120%] before:bg-linear-to-b before:from-gray-100">
+    <section className="relative before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:h-[120%] before:bg-gradient-to-b before:from-gray-100">
       <div className="pt-12 md:pt-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Top startups love Simple
+              Lo que dicen nuestros alumnos
             </h2>
+            <p className="mt-4 text-lg text-gray-700">
+              Más de 2,000 traders ya transformaron su forma de operar
+            </p>
           </div>
         </div>
         <div className="relative mx-auto flex max-w-[94rem] justify-center">
@@ -59,7 +62,7 @@ export default function TestimonialsCarousel() {
             className="absolute bottom-20 -z-10 -translate-x-36"
             aria-hidden="true"
           >
-            <div className="h-80 w-80 rounded-full bg-linear-to-tr from-blue-500 to-gray-900 opacity-30 blur-[160px] will-change-[filter]" />
+            <div className="h-80 w-80 rounded-full bg-gradient-to-tr from-blue-500 to-gray-900 opacity-30 blur-[160px] will-change-[filter]" />
           </div>
           <div className="absolute -bottom-10 -z-10" aria-hidden="true">
             <div className="h-80 w-80 rounded-full bg-blue-500 opacity-40 blur-[160px] will-change-[filter]" />

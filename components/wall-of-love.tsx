@@ -17,216 +17,157 @@ import TestimonialImg12 from "@/public/images/testimonial-12.jpg";
 import TestimonialImg13 from "@/public/images/testimonial-13.jpg";
 import TestimonialImg14 from "@/public/images/testimonial-14.jpg";
 import TestimonialImg15 from "@/public/images/testimonial-15.jpg";
-import TestimonialImg16 from "@/public/images/testimonial-16.jpg";
-import TestimonialImg17 from "@/public/images/testimonial-17.jpg";
-import TestimonialImg18 from "@/public/images/testimonial-18.jpg";
-import TestimonialImg19 from "@/public/images/testimonial-19.jpg";
-import TestimonialImg20 from "@/public/images/testimonial-20.jpg";
-import TestimonialImg21 from "@/public/images/testimonial-21.jpg";
-import TestimonialImg22 from "@/public/images/testimonial-22.jpg";
-import TestimonialVideoThumb01 from "@/public/images/video-testimonial-01.jpg";
-import TestimonialVideoThumb02 from "@/public/images/video-testimonial-02.jpg";
 
 const testimonials = [
   {
     img: TestimonialImg01,
-    name: "Peter Lowe",
-    username: "@peterlowex",
-    date: "May 19, 2027",
+    name: "Andrea Rodríguez",
+    location: "Colombia",
+    date: "2024",
     content:
-      "Simple has revolutionized the way I manage my work. Its intuitive interface and seamless functionality make staying organized effortless. I can't imagine my life without it.",
-    channel: "Twitter",
+      "La maestría estuvo increíble! Información y #TOPSECRETSGOLD super valiosos y precisos. Fue muy interesante empezar a ver el mercado como los grandes. La formación fue muy completa, nos ayuda a enfocar la atención en lo verdaderamente importante, siendo conscientes en no seguir al mercado, sino en aprender a anticiparnos.",
+    program: "Maestría de Trading",
+    rating: 5,
   },
   {
     img: TestimonialImg02,
-    name: "Rodri Alba",
-    username: "@rodri_spn",
-    date: "May 19, 2027",
+    name: "Patricia Rueda",
+    location: "Colombia",
+    date: "2024",
     content:
-      "As a busy professional, Simple has been a lifesaver. It streamlines my workflow, allowing me to focus on what truly matters. Plus, its minimalist design is a breath of fresh air in a cluttered digital world.",
-    channel: "Twitter",
+      "Esta maestría es lo mejor a lo que he asistido. Nada más sencillo que el trading que tú enseñas. La forma es muy simplificada, elemental pero absolutamente precisa y ganadora. Aclaré muchos conceptos que no me dejaban avanzar. Muchísimas gracias y siempre seré tu eterna alumna.",
+    program: "Maestría",
+    rating: 5,
   },
   {
     img: TestimonialImg03,
-    name: "Michele Lex",
-    date: "May 19, 2027",
+    name: "Giovanny Apuy",
+    location: "Costa Rica",
+    date: "2024",
     content:
-      "I run a nonprofit organization, and we needed a website to share our mission and connect with donors. This tool allowed us to create a visually appealing site that effectively communicates our message.",
+      "Muy agradecido, la maestría #TOPSECRETSGOLD muy buena. Se abarcaron temas para lograr precisión y rentabilidad en el mercado, muy bien explicado y la recomendaría.",
+    program: "Maestría de Trading",
     rating: 5,
-    channel: "Google",
   },
   {
     img: TestimonialImg04,
-    name: "Michael Ross",
-    username: "@michjack",
-    date: "Apr 12, 2027",
+    name: "Oscar Eneque",
+    location: "Perú",
+    date: "2024",
     content:
-      "I've struggled to find a website builder that suits my needs until I found Simple. Its clean design and user-friendly features make staying organized a breeze. I highly recommend it.",
-    channel: "Twitter",
+      "Su curso ha sido espectacular, me gustó muchísimo. El conocimiento de las sesiones para mí fue increíble, ver cómo ayuda a darle precisión a mis entradas. Veo que el trading lo más importante es esperar, ser un francotirador y no un mono con metralleta jajaja.",
+    program: "Maestría de Trading",
+    rating: 5,
   },
   {
     img: TestimonialImg05,
-    name: "Mike Bryan",
-    username: "@mike0point7",
-    date: "Mar 10, 2027",
-    content: "Simple's mind-blowing AI Site Builder: Crash Course 🚀",
-    videoThumb: TestimonialVideoThumb01,
-    videoUrl: "#0",
-    channel: "YouTube",
+    name: "Yeison Flórez",
+    location: "Colombia",
+    date: "2024",
+    content:
+      "El viernes puse 3 trades con stop y take profit. Se cumplieron arriba de 100 pips las 3 operaciones. Eres un crack, gracias por todo tu esfuerzo en buscar la información correcta y transmitirla. Dicen que hacer amigos que te obliguen a subir de nivel, eres uno de ellos.",
+    program: "Maestría de Trading",
+    rating: 5,
   },
   {
     img: TestimonialImg06,
-    name: "Sarah Rodriguez",
-    username: "@sararodriguez",
-    date: "Feb 27, 2027",
+    name: "Victory Restrepo",
+    location: "Colombia",
+    date: "2024",
     content:
-      "I was blown away by how easy it was to create my website using this tool! Within a few hours, I had a professional-looking site up and running, and my client could not believe.",
-    channel: "Twitter",
+      "Me ayudó a ver el mercado de una manera muy diferente. Hasta el momento el 80% de los análisis que he hecho se han cumplido aplicando todo lo nuevo. Es una forma muy práctica de hacer trading. Lo más brutal es ver que no es humo sino 100% resultados reales.",
+    program: "0a6cifras - Medellín",
+    rating: 5,
   },
   {
     img: TestimonialImg07,
-    name: "Duncan Mitch",
-    username: "@lovingme_",
-    date: "Feb 08, 2027",
+    name: "Rodrigo Calderón",
+    location: "Costa Rica",
+    date: "2024",
     content:
-      "Simple has simplified my life in more ways than one. From managing my clients to keeping track of deadlines, it's become my go-to tool for staying on top of everything. I couldn't imagine managing without it!",
-    channel: "Twitter",
+      "Gracias por la calidad del curso, superó mucho mis expectativas. Fue un verdadero destructor de paradigmas. Eliminar todo rezago de la estructura mental que me dieron los cursos anteriores ha sido clave.",
+    program: "Intensivo",
+    rating: 5,
   },
   {
     img: TestimonialImg08,
-    name: "Kavisha Mills",
-    date: "Jan 25, 2027",
+    name: "Julián González",
+    location: "Colombia",
+    date: "2024",
     content:
-      "I'm a freelancer, and having a professional website is crucial for attracting clients. This tool not only helped me create a beautiful portfolio but also boosted my visibility.",
+      "Fue otro nivel de lo que se enseña normalmente. No es solo buscar los patrones sino cuando buscarlos. El tema de las sesiones y las áreas de trabajo me está ayudando mucho. Sin palabras, siempre ahí ayudando, mejor acompañamiento no puede haber.",
+    program: "Intensivo",
     rating: 5,
-    channel: "Google",
   },
   {
     img: TestimonialImg09,
-    name: "Dante Luzzi",
-    username: "@danteluzzi",
-    date: "Jan 12, 2027",
+    name: "Lucas Millanao",
+    location: "Argentina",
+    date: "2024",
     content:
-      "I've never been a fan of complicated website builders, which is why Simple is perfect for me. Its minimalist design and straightforward functionality make staying organized feel like second nature.",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg12,
-    name: "Erica Rossi",
-    username: "@ericaita_7",
-    date: "Dec 29, 2026",
-    content:
-      "I'm a freelancer, and having a professional website is crucial for attracting clients. This tool not only helped me create a beautiful portfolio but also boosted my visibility online. I couldn't be happier with the results!",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg13,
-    name: "Emma Riekwel",
-    username: "@jonnoriek",
-    date: "Dec 15, 2026",
-    content:
-      "SI'm a freelancer, and having a professional website is crucial for attracting clients. This tool not only helped me create a beautiful portfolio but also boosted my visibility online. I couldn't be happier with the results!",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg11,
-    name: "Jeff Broderick",
-    username: "@jeff_br",
-    date: "Dec 02, 2026",
-    content:
-      "I'm a designer, and I wanted a website that would showcase my work beautifully. This tool exceeded my expectations with its stunning gallery options and seamless integration with social media platforms. I've received so many compliments on my portfolio - thank you!",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg15,
-    name: "Mariana Castilho",
-    date: "Jan 25, 2027",
-    content:
-      "I've never been one for coding, so finding a website builder that didn't require any technical skills was a dream come true. This tool exceeded my expectations, and I'm proud to show off my new site to friends.",
+      "Una de las mejores inversiones que he hecho este año fue tomar su curso. Gracias le doy a Dios por cruzarnos en mi camino de formación a TRADER MEGA RENTABLE. Lo que más me rompió la cabeza fueron los tips para las entradas y cómo anticiparme al movimiento.",
+    program: "Intensivo",
     rating: 5,
-    channel: "Google",
   },
   {
     img: TestimonialImg10,
-    name: "Keith Kennedy",
-    username: "@jeff_br",
-    date: "Dec 02, 2026",
+    name: "Eduardo Ardila",
+    location: "Chile",
+    date: "2024",
     content:
-      "Simple has simplified my life in more ways than one. From managing my clients to keeping track of deadlines, it's become my go-to tool for staying on top of everything. I couldn't imagine managing without it!",
-    channel: "Twitter",
+      "Muchísimas gracias por tu humildad y compromiso con todos tus estudiantes. El curso fenomenal, aprendí muchas cosas que tengo que seguir practicando. Lo de las sesiones y cómo funciona cada una es algo que no sabía y estoy seguro que me servirá mucho.",
+    program: "Intensivo",
+    rating: 5,
+  },
+  {
+    img: TestimonialImg11,
+    name: "Ignacio Valdez",
+    location: "Argentina",
+    date: "2024",
+    content:
+      "Superó mis expectativas. Es increíble cómo clase a clase se van acomodando las ideas para mejorar nuestra operativa, identificando con mayor claridad las zonas sensibles, los horarios y entender el porqué de cada movimiento. Muy bueno hermano, gracias.",
+    program: "Intensivo",
+    rating: 5,
+  },
+  {
+    img: TestimonialImg12,
+    name: "Gustavo Mejía",
+    location: "Colombia",
+    date: "2024",
+    content:
+      "Fue espectacular hermano, información de otro nivel. Una educación totalmente disruptiva. Aprendí a identificar zonas sensibles, ciclos, poder conocer cómo se mueven los tiburones del mercado. Es un reseteo a mi cabeza.",
+    program: "Intensivo",
+    rating: 5,
+  },
+  {
+    img: TestimonialImg13,
+    name: "Alfonso Ruíz",
+    location: "Colombia",
+    date: "2024",
+    content:
+      "Tu curso avanzado Excelente, información de muchísimo valor para ir mejorando mi operativa. Lo de las sesiones brutal, para operar como los bancos. También los días de recapitalización para saber que puede hacer el mercado.",
+    program: "Intensivo",
+    rating: 5,
   },
   {
     img: TestimonialImg14,
-    name: "Kate Stevanovic",
-    username: "@hey_im_kate",
-    date: "Mar 10, 2027",
-    content: "Simple's mind-blowing AI Site Builder: Crash Course 🚀",
-    videoThumb: TestimonialVideoThumb02,
-    videoUrl: "#0",
-    channel: "YouTube",
-  },
-  {
-    img: TestimonialImg16,
-    name: "Rodri Alba",
-    username: "@rodri_spn",
-    date: "Dec 02, 2026",
+    name: "Stephany Suárez",
+    location: "Colombia",
+    date: "2024",
     content:
-      "As a founder, having a visually appealing and user-friendly website is essential. This tool not only helped me achieve that but also improved my site's performance and SEO.",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg17,
-    name: "Miguel Liverani",
-    date: "Jan 25, 2027",
-    content:
-      "I'm not tech-savvy at all, but this tool made me feel like a pro web designer! The step-by-step guides and tutorials were incredibly helpful, and I never felt overwhelmed. I've already recommended it to all my friends who are looking to build their own websites.",
+      "Entendí la forma de ver el mercado de acuerdo a la operatividad de los grandes inversionistas. Aprendí que el mercado siempre va a tener 5 movimientos y que al terminarlos es donde realmente debemos tener paciencia para esperar el verdadero movimiento.",
+    program: "Conceptos Esenciales",
     rating: 5,
-    channel: "Google",
   },
   {
-    img: TestimonialImg18,
-    name: "Helena Gynn",
-    username: "@helena_88",
-    date: "Apr 12, 2027",
+    img: TestimonialImg15,
+    name: "Yulieth Graciano",
+    location: "Colombia",
+    date: "2024",
     content:
-      "I'm a designer, and I wanted a website that would showcase my work beautifully. This tool exceeded my expectations with its stunning gallery options and seamless integration with social media platforms. I 've received so many compliments on my portfolio - thank you!",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg19,
-    name: "James Kenny",
-    username: "@jameskenny",
-    date: "Feb 27, 2027",
-    content:
-      "After struggling with other website builders, I stumbled upon this gem, and I'm thrilled I did! The templates are modern, the customization options are endless, and the support team is incredibly helpful.",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg21,
-    name: "Sarah Ferguson",
-    username: "@sarah_rose",
-    date: "Feb 08, 2027",
-    content:
-      "I needed a website for my personal brand, and this tool helped me bring my vision to life. The customization options allowed me to create a site that perfectly reflects my style and personality. I've received so many compliments on the design - thank you!",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg22,
-    name: "Christopher Rossi",
-    username: "@yo_chris",
-    date: "Feb 08, 2027",
-    content:
-      "I recently switched from another website builder to this one, and I couldn't be happier with my decision. The migration process was seamless, and the transition was practically effortless. Plus, the new features and updates have made a world of difference!",
-    channel: "Twitter",
-  },
-  {
-    img: TestimonialImg20,
-    name: "Kimberly Rutz",
-    username: "@imkimberly",
-    date: "Feb 02, 2027",
-    content:
-      "I've been searching for a website builder that offers both functionality and affordability, and I finally found it with this tool. Can't recommend it enough!",
-    channel: "Twitter",
+      "Increíble la información, muy valiosa. Con esta mentoría se despeja muchísimo más las dudas a la hora de operar. Ya veo el mercado mucho más claro. Sí que valió la pena una y mil veces.",
+    program: "Conceptos Esenciales",
+    rating: 5,
   },
 ];
 
@@ -237,6 +178,17 @@ export default function WallOfLove() {
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
+          
+          {/* Section header */}
+          <div className="pb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+              Traders Que Ya Transformaron Su Operativa
+            </h2>
+            <p className="text-lg text-gray-700">
+              Testimonios reales de alumnos en +60 países
+            </p>
+          </div>
+
           {/* Testimonials grid */}
           <div
             ref={masonryContainer}

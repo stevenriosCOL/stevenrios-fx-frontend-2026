@@ -96,7 +96,7 @@ export default async function DocumentationPage(
                         <Hamburger />
                         {/* Breadcrumbs */}
                         <div className="ml-3 flex min-w-0 items-center whitespace-nowrap text-sm">
-                          <span className="text-gray-600">Documentation</span>
+                          <span className="text-gray-600">Términos y condiciones</span>
                           <svg
                             className="mx-2! shrink-0 -rotate-90 fill-gray-400"
                             width={11}
@@ -148,7 +148,7 @@ export default async function DocumentationPage(
                   <div className="text-center">
                     <div className="mt-6 inline-flex items-center justify-center rounded-xl bg-white px-3 py-2 shadow-lg shadow-black/[0.03]">
                       <div className="mr-3 text-sm text-gray-700">
-                        Did this page help you?
+                        ¿Te ayudó esta página?
                       </div>
                       <div className="flex gap-2">
                         <button className="btn-sm rounded-sm bg-white px-2 py-0 shadow-sm hover:bg-gray-50">
@@ -160,7 +160,7 @@ export default async function DocumentationPage(
                           >
                             <path d="M6.731 5.5h3.225a1.883 1.883 0 0 1 1.575.75 1.9 1.9 0 0 1 .45 1.575l-.6 3.45A2.009 2.009 0 0 1 9.431 13H3V7l1.784-5.625A.5.5 0 0 1 5.234 1a1.3 1.3 0 0 1 .882.176A1.314 1.314 0 0 1 6.73 2.5v3ZM2 7H.5a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5H2V7Z" />
                           </svg>
-                          Yes
+                          Sí
                         </button>
                         <button className="btn-sm rounded-sm bg-white px-2 py-0 shadow-sm hover:bg-gray-50">
                           <svg

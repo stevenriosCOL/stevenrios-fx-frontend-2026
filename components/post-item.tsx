@@ -27,7 +27,7 @@ export default function PostItem({ ...props }) {
           className="text-sm font-medium text-blue-500 transition-colors hover:text-blue-600"
           href={`/blog/${props.slug}`}
         >
-          Read more <span className="tracking-normal text-blue-300">-&gt;</span>
+          Leer más <span className="tracking-normal text-blue-300">-&gt;</span>
         </Link>
       </footer>
     </article>

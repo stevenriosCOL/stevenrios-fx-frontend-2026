@@ -10,19 +10,21 @@ export default function Hero() {
           {/* Section header */}
           <div className="pb-10 text-center">
             <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl">
-              Our wall of love
+              +2,000 Traders Transformados
             </h1>
             <div className="mx-auto max-w-3xl">
               <p className="mb-8 text-lg text-gray-700">
-                Read and listen to what our customers are saying about Simple.
+                Resultados reales de alumnos en 60+ países. 8 años de testimonios verificables. No vendemos sueños, mostramos realidad.
               </p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <a
                   className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                  href="#0"
+                  href="https://wa.link/s8zpu8"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="relative inline-flex items-center">
-                    Share Your Testimonial{" "}
+                    Comparte Tu Testimonio{" "}
                     <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                       -&gt;
                     </span>
@@ -36,3 +38,4 @@ export default function Hero() {
     </section>
   );
 }
+

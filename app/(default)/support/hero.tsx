@@ -11,12 +11,12 @@ export default function Hero() {
           {/* Section header */}
           <div className="pb-10 text-center">
             <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl">
-              How can we help?
+              ¿Cómo podemos ayudarte hoy?
             </h1>
             <div className="mx-auto max-w-3xl">
               <p className="text-lg text-gray-700">
-                Need support or have a question about Simple? We're here to
-                help.
+                Encuentra respuestas claras sobre trading, programas de formación,
+  pagos, acceso a cursos y soporte técnico. Estamos aquí para guiarte.
               </p>
             </div>
           </div>

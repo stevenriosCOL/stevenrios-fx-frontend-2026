@@ -55,7 +55,7 @@ export default function Sidebar({ docs }: { docs: any[] }) {
           {/* Docs nav */}
           <nav className="space-y-8 md:block">
             <div>
-              <div className="mb-3 font-bold">Documentation</div>
+              <div className="mb-3 font-bold">Condiciones de uso</div>
               <ul className="space-y-2 text-sm">
                 {docs.map((doc, index) => (
                   <li key={index}>
