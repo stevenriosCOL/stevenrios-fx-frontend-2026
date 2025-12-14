@@ -1,9 +1,24 @@
-export default function SignIn() {
+'use client';
+
+import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
+
+function SignInForm() {
+  const searchParams = useSearchParams();
+  const error = searchParams.get('error');
+
   return (
     <>
       <div className="mb-10">
         <h1 className="text-4xl font-bold">Accede a la plataforma SR Academy</h1>
       </div>
+
+      {/* Error Alert */}
+      {error === 'credenciales' && (
+        <div className="mb-4 rounded-lg bg-red-50 p-4 text-sm text-red-800">
+          Credenciales incorrectas. Verifica tu usuario y contraseña.
+        </div>
+      )}
 
       {/* Form - Submit directo a Laravel */}
       <form 
@@ -136,5 +151,13 @@ export default function SignIn() {
         </div>
       </div>
     </>
+  );
+}
+
+export default function SignIn() {
+  return (
+    <Suspense fallback={<div>Cargando...</div>}>
+      <SignInForm />
+    </Suspense>
   );
 }
