@@ -1,56 +1,15 @@
-'use client';
-
-import { useState, FormEvent } from 'react';
-import Link from 'next/link';
-import { authService } from '@/lib/auth';
-
 export default function SignIn() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setError('');
-    setIsLoading(true);
-
-    const formData = new FormData(e.currentTarget);
-    const userType = formData.get('user_type') as 'student' | 'advisor' | 'admin';
-    
-    try {
-      const result = await authService.login({
-        usuario_id: formData.get('usuario_id') as string,
-        password: formData.get('password') as string,
-        user_type: userType
-      });
-
-      if (result.success && result.redirect) {
-        // Redirigir al dashboard Laravel en Hostgator
-        window.location.href = `https://stevenriosfx.com${result.redirect}`;
-      } else {
-        setError('Error al iniciar sesión');
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Error al iniciar sesión');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <>
       <div className="mb-10">
         <h1 className="text-4xl font-bold">Accede a la plataforma SR Academy</h1>
       </div>
 
-      {/* Error Alert */}
-      {error && (
-        <div className="mb-4 rounded-lg bg-red-50 p-4 text-sm text-red-800">
-          {error}
-        </div>
-      )}
-
-      {/* Form */}
-      <form onSubmit={handleSubmit}>
+      {/* Form - Submit directo a Laravel */}
+      <form 
+        action="https://stevenriosfx.com/auth/login" 
+        method="POST"
+      >
         <div className="space-y-4">
           
           {/* Tipo de Usuario */}
@@ -132,7 +91,6 @@ export default function SignIn() {
               placeholder="Tu usuario"
               autoComplete="username"
               required
-              disabled={isLoading}
             />
           </div>
 
@@ -149,7 +107,6 @@ export default function SignIn() {
               autoComplete="current-password"
               placeholder="••••••••"
               required
-              disabled={isLoading}
             />
           </div>
 
@@ -159,24 +116,23 @@ export default function SignIn() {
         <div className="mt-6">
           <button 
             type="submit"
-            disabled={isLoading}
-            className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]"
           >
-            {isLoading ? 'Iniciando sesión...' : 'Iniciar Sesión'}
+            Iniciar Sesión
           </button>
         </div>
       </form>
 
       {/* Bottom links */}
       <div className="mt-6 space-y-3 text-center">
-        <Link className="block text-sm text-gray-700 underline hover:no-underline" href="/reset-password">
+        <a className="block text-sm text-gray-700 underline hover:no-underline" href="https://stevenriosfx.com/reset-password">
           ¿Olvidaste tu contraseña?
-        </Link>
+        </a>
         <div className="text-sm text-gray-600">
           ¿No tienes cuenta?{" "}
-          <Link className="font-medium text-blue-600 hover:text-blue-700" href="/pricing">
+          <a className="font-medium text-blue-600 hover:text-blue-700" href="/pricing">
             Ver Planes
-          </Link>
+          </a>
         </div>
       </div>
     </>
