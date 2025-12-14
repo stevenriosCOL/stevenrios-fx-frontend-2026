@@ -21,10 +21,10 @@ function SignInForm() {
       )}
 
       {/* Form - Submit directo a Laravel */}
-      <form 
-        action="https://stevenriosfx.com/auth/login" 
-        method="POST"
-      >
+<form 
+  action="https://api.stevenriosfx.com/api/auth/login" 
+  method="POST"
+>
         <div className="space-y-4">
           
           {/* Tipo de Usuario */}
