@@ -22,7 +22,7 @@ function SignInForm() {
 
       {/* Form - Submit directo a Laravel */}
 <form 
-  action="https://api.stevenriosfx.com/api/auth/login" 
+  action="https://app.stevenriosfx.com/auth/login" 
   method="POST"
 >
         <div className="space-y-4">
