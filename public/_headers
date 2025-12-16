@@ -1,0 +1,7 @@
+/assets/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
+  
+/fonts/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET
