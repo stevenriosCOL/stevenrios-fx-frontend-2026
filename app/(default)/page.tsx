@@ -4,7 +4,7 @@ export const metadata = {
     "Aprende trading de forma estructurada con psicología aplicada, gestión real de riesgo y estrategias probadas. +2.000 traders formados en más de 60 países.",
 };
 
-import Hero from "@/components/hero-home";
+import WaitlistHero from "@/components/waitlist-hero";
 import BusinessCategories from "@/components/business-categories";
 import LargeTestimonial from "@/components/large-testimonial";
 import FeaturesPlanet from "@/components/features-planet";
@@ -20,7 +20,7 @@ import SectionGuarantees from "@/components/section-guarantees";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <WaitlistHero />
       <BusinessCategories />
       <SectionPainPoints />
       <LargeTestimonial />
