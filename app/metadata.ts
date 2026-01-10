@@ -44,6 +44,6 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'TU_CODIGO_DE_VERIFICACION', // Lo obtienes en Google Search Console
+    google: 'o1yixiRBB8xYhEbOGc24fEaxNcrY2mq6eMCRnUFfzUw', // Lo obtienes en Google Search Console
   },
 }
