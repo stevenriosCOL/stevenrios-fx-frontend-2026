@@ -13,6 +13,10 @@ export const metadata = {
   title: "SR Academy | Trading, Cripto y Finanzas",
   description:
     "Formación completa en trading, criptomonedas, psicología del trader y finanzas personales. Más de 2,000 estudiantes en 60+ países.",
+  // ✅ AGREGADO: Verificación de Google Search Console
+  verification: {
+    google: "o1yixiRBB8xYhEbOGc24fEaxNcrY2mq6eMCRnUFfzUw",
+  },
 };
 
 export default function RootLayout({
@@ -41,7 +45,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth">
       <body
         className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
