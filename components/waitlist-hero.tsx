@@ -9,6 +9,7 @@ import Avatar03 from "@/public/images/avatar-03.jpg";
 import Avatar04 from "@/public/images/avatar-04.jpg";
 import Avatar05 from "@/public/images/avatar-05.jpg";
 import Avatar06 from "@/public/images/avatar-06.jpg";
+import { trackEvent } from "@/components/analytics/gtag";
 
 export default function WaitlistHero() {
   const [email, setEmail] = useState("");
@@ -35,12 +36,19 @@ export default function WaitlistHero() {
         throw new Error(data.error || "Error al registrarse");
       }
 
+      // ✅ TRACKING: Registro exitoso en waitlist
+      trackEvent("generate_lead", {
+        method: "waitlist_form",
+        form_name: "waitlist_hero",
+      });
+
       setSuccess(true);
       setEmail("");
       setName("");
-
-    } catch (err: any) {
-      setError(err.message || "Algo salió mal. Intenta de nuevo.");
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error ? err.message : "Algo salió mal. Intenta de nuevo.";
+      setError(message);
     } finally {
       setLoading(false);
     }
@@ -50,12 +58,9 @@ export default function WaitlistHero() {
     <section className="relative">
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
-          
           {/* Section header */}
           <div className="pb-12 text-center md:pb-16">
-            
             {/* Avatars con borde */}
             <div
               className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]"
@@ -136,8 +141,8 @@ export default function WaitlistHero() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Nueva plataforma. Nuevas herramientas. Nuevo sistema completo
-                de dominio financiero.
+                Nueva plataforma. Nuevas herramientas. Nuevo sistema completo de
+                dominio financiero.
                 <br />
                 <strong className="text-gray-900">
                   Sé de los primeros en acceder cuando lancemos oficialmente.
@@ -152,10 +157,8 @@ export default function WaitlistHero() {
                   data-aos-delay={450}
                 >
                   <div className="relative flex items-center justify-center gap-10 before:h-px before:w-full before:border-b before:border-gray-200 after:h-px after:w-full after:border-b after:border-gray-200 mb-8">
-                    
                     <div className="w-full max-w-xs mx-auto shrink-0">
                       <form onSubmit={handleSubmit} className="relative">
-                        
                         {/* Border con dots en esquinas */}
                         <div
                           className="absolute -inset-3 bg-gray-100 rounded-lg -z-10 
@@ -173,7 +176,6 @@ export default function WaitlistHero() {
                         />
 
                         <div className="space-y-3">
-                          
                           {/* Campo Nombre */}
                           <div>
                             <label className="sr-only" htmlFor="name">
@@ -188,7 +190,7 @@ export default function WaitlistHero() {
                                   height={16}
                                   viewBox="0 0 16 16"
                                 >
-                                  <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                  <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                                 </svg>
                               </div>
                               <input
@@ -233,7 +235,7 @@ export default function WaitlistHero() {
 
                           {/* Botón - COLOR AZUL IGUAL QUE "COMENZAR" */}
                           <div>
-                            <button 
+                            <button
                               type="submit"
                               disabled={loading}
                               className="btn w-full bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -245,105 +247,117 @@ export default function WaitlistHero() {
                           {/* Error */}
                           {error && (
                             <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
-                              <p className="text-sm text-red-800 text-center">{error}</p>
+                              <p className="text-sm text-red-800 text-center">
+                                {error}
+                              </p>
                             </div>
                           )}
-
                         </div>
                       </form>
                     </div>
                   </div>
                 </div>
-) : (
-  /* Mensaje de éxito - MANTIENE ESTILO DEL FORMULARIO */
-  <div
-    className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]"
-    data-aos="zoom-y-out"
-    data-aos-delay={450}
-  >
-    <div className="relative flex items-center justify-center gap-10 before:h-px before:w-full before:border-b before:border-gray-200 after:h-px after:w-full after:border-b after:border-gray-200 mb-8">
-      <div className="w-full max-w-xs mx-auto shrink-0">
-        <div className="relative">
-          {/* Mismo border con dots en esquinas */}
-          <div
-            className="absolute -inset-3 bg-gray-100 rounded-lg -z-10 
-              before:absolute before:inset-y-0 before:left-0 before:w-[15px] 
-              before:bg-[length:15px_15px] 
-              before:[background-position:top_center,bottom_center] 
-              before:bg-no-repeat 
-              before:[background-image:radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px)]
-              after:absolute after:inset-y-0 after:right-0 after:w-[15px] 
-              after:bg-[length:15px_15px] 
-              after:[background-position:top_center,bottom_center] 
-              after:bg-no-repeat 
-              after:[background-image:radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px)]"
-            aria-hidden="true"
-          />
+              ) : (
+                /* Mensaje de éxito - MANTIENE ESTILO DEL FORMULARIO */
+                <div
+                  className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]"
+                  data-aos="zoom-y-out"
+                  data-aos-delay={450}
+                >
+                  <div className="relative flex items-center justify-center gap-10 before:h-px before:w-full before:border-b before:border-gray-200 after:h-px after:w-full after:border-b after:border-gray-200 mb-8">
+                    <div className="w-full max-w-xs mx-auto shrink-0">
+                      <div className="relative">
+                        {/* Mismo border con dots en esquinas */}
+                        <div
+                          className="absolute -inset-3 bg-gray-100 rounded-lg -z-10 
+                            before:absolute before:inset-y-0 before:left-0 before:w-[15px] 
+                            before:bg-[length:15px_15px] 
+                            before:[background-position:top_center,bottom_center] 
+                            before:bg-no-repeat 
+                            before:[background-image:radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px)]
+                            after:absolute after:inset-y-0 after:right-0 after:w-[15px] 
+                            after:bg-[length:15px_15px] 
+                            after:[background-position:top_center,bottom_center] 
+                            after:bg-no-repeat 
+                            after:[background-image:radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px),radial-gradient(circle_at_center,rgb(107_114_128)_1.5px,transparent_1.5px)]"
+                          aria-hidden="true"
+                        />
 
-          {/* Contenido del mensaje */}
-          <div className="relative bg-white rounded-lg p-8 text-center">
-            {/* Check verde */}
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-500 mb-4">
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
+                        {/* Contenido del mensaje */}
+                        <div className="relative bg-white rounded-lg p-8 text-center">
+                          {/* Check verde */}
+                          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-500 mb-4">
+                            <svg
+                              className="w-8 h-8 text-white"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={3}
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                          </div>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
-              ¡Bienvenido a bordo! 🎉
-            </h3>
+                          <h3 className="text-xl font-bold text-gray-900 mb-2">
+                            ¡Bienvenido a bordo! 🎉
+                          </h3>
 
-            <p className="text-sm text-gray-600 mb-3">
-              Revisa tu email. Te enviamos información importante.
-            </p>
+                          <p className="text-sm text-gray-600 mb-3">
+                            Revisa tu email. Te enviamos información importante.
+                          </p>
 
-            <p className="text-xs text-gray-500 mb-6">
-              Serás de los primeros en conocer el lanzamiento.
-            </p>
+                          <p className="text-xs text-gray-500 mb-6">
+                            Serás de los primeros en conocer el lanzamiento.
+                          </p>
 
-            {/* Botón WhatsApp - MISMO ESTILO QUE BOTÓN DEL FORMULARIO */}
-            <a
-              href="https://wa.me/573006926613?text=Hola%20Steven%2C%20me%20registré%20en%20la%20waitlist%20🚀"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn inline-flex items-center gap-2 bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
-            >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </svg>
-              Háblame por WhatsApp
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
-
+                          {/* ✅ TRACKING: Click en WhatsApp después de registro */}
+                          <a
+                            href="https://wa.me/573006926613?text=Hola%20Steven%2C%20me%20registré%20en%20la%20waitlist%20🚀"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() =>
+                              trackEvent("contact", {
+                                method: "whatsapp",
+                                link_url: "https://wa.me/573006926613",
+                                location: "waitlist_success",
+                              })
+                            }
+                            className="btn inline-flex items-center gap-2 bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
+                          >
+                            <svg
+                              className="w-4 h-4"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Háblame por WhatsApp
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Social proof */}
               <div className="max-w-3xl mx-auto">
                 <div className="text-center">
-                  <p className="text-sm text-gray-500" data-aos="zoom-y-out" data-aos-delay={500}>
+                  <p
+                    className="text-sm text-gray-500"
+                    data-aos="zoom-y-out"
+                    data-aos-delay={500}
+                  >
                     Únete a los{" "}
-                    <span className="text-gray-700 font-medium">
-                      500+
-                    </span>{" "}
+                    <span className="text-gray-700 font-medium">500+</span>{" "}
                     traders que ya están esperando.
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
 

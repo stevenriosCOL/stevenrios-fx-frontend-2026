@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { trackEvent } from "@/components/analytics/gtag";
 
 export default function Footer({ border = false }: { border?: boolean }) {
   return (
@@ -137,7 +138,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
             </ul>
           </div>
 
-          {/* 5th block – Social */}
+          {/* 5th block – Social - ✅ CON TRACKING */}
           <div className="space-y-2">
             <h3 className="text-sm font-medium">Social</h3>
             <ul className="space-y-2 text-sm">
@@ -147,6 +148,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   href="https://kick.com/stevenriosfx"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackEvent("click", {
+                      link_url: "https://kick.com/stevenriosfx",
+                      link_domain: "kick.com",
+                      link_text: "Streaming en Kick",
+                      location: "footer_social",
+                    })
+                  }
                 >
                   Streaming en Kick
                 </a>
@@ -157,6 +166,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   href="https://instagram.com/stevenrios.fx"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackEvent("click", {
+                      link_url: "https://instagram.com/stevenrios.fx",
+                      link_domain: "instagram.com",
+                      link_text: "Instagram personal",
+                      location: "footer_social",
+                    })
+                  }
                 >
                   Instagram personal
                 </a>
@@ -167,6 +184,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   href="https://instagram.com/sracademyoficial"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackEvent("click", {
+                      link_url: "https://instagram.com/sracademyoficial",
+                      link_domain: "instagram.com",
+                      link_text: "Instagram academia",
+                      location: "footer_social",
+                    })
+                  }
                 >
                   Instagram academia
                 </a>
@@ -177,6 +202,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   href="https://es.tradingview.com/u/StevenRiosFx"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackEvent("click", {
+                      link_url: "https://es.tradingview.com/u/StevenRiosFx",
+                      link_domain: "tradingview.com",
+                      link_text: "Analista en TradingView",
+                      location: "footer_social",
+                    })
+                  }
                 >
                   Analista en TradingView
                 </a>
@@ -200,6 +233,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
     </footer>
   );
 }
+
 
 
 
