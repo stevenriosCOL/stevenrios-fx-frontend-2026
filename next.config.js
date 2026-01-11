@@ -43,12 +43,13 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.elfsight.com https://apps.elfsight.com https://static.elfsight.com",
-              "style-src 'self' 'unsafe-inline'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://elfsightcdn.com https://static.elfsight.com https://apps.elfsight.com",
+              "style-src 'self' 'unsafe-inline' https://elfsightcdn.com",
               "img-src 'self' data: https: blob:",
-              "font-src 'self' data:",
-              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://cdn.elfsight.com https://apps.elfsight.com https://api.elfsight.com",
-              "frame-src 'self' https://apps.elfsight.com",
+              "font-src 'self' data: https://elfsightcdn.com",
+              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://elfsightcdn.com https://core.service.elfsight.com https://api.elfsight.com",
+              "frame-src 'self' https://apps.elfsight.com https://elfsightcdn.com",
+              "worker-src 'self' blob:",
             ].join('; ')
           },
         ],
