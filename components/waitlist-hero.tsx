@@ -193,15 +193,19 @@ export default function WaitlistHero() {
                                   <path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                                 </svg>
                               </div>
-                              <input
-                                id="name"
-                                className="form-input text-sm w-full pl-10 pr-4"
-                                type="text"
-                                placeholder="Tu nombre..."
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                required
-                              />
+<input
+  id="name"
+  className="form-input text-sm w-full pl-10 pr-4"
+  type="text"
+  placeholder="Tu nombre..."
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  required
+  minLength={2}
+  maxLength={80}
+  pattern="[A-Za-zÀ-ÿ\s]{2,80}"
+  title="Nombre debe tener entre 2 y 80 caracteres (solo letras)"
+/>
                             </div>
                           </div>
 
@@ -221,15 +225,18 @@ export default function WaitlistHero() {
                                   <path d="M14 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12Zm0-8.58L8 6.849 2 3.42V2h12v1.42Z" />
                                 </svg>
                               </div>
-                              <input
-                                id="email"
-                                className="form-input text-sm w-full pl-10 pr-4"
-                                type="email"
-                                placeholder="tu@email.com"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                              />
+<input
+  id="email"
+  className="form-input text-sm w-full pl-10 pr-4"
+  type="email"
+  placeholder="tu@email.com"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  required
+  maxLength={254}
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+  title="Ingresa un email válido"
+/>
                             </div>
                           </div>
 
