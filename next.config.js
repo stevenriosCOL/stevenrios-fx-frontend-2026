@@ -41,12 +41,12 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://elfsightcdn.com https://universe-static.elfsightcdn.com https://static.elfsight.com https://apps.elfsight.com https://vercel.live",
-              "style-src 'self' 'unsafe-inline' https://elfsightcdn.com https://universe-static.elfsightcdn.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://*.elfsightcdn.com https://*.elfsight.com https://vercel.live",
+              "style-src 'self' 'unsafe-inline' https://*.elfsightcdn.com",
               "img-src 'self' data: https: blob:",
-              "font-src 'self' data: https://elfsightcdn.com https://universe-static.elfsightcdn.com",
-              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://elfsightcdn.com https://universe-static.elfsightcdn.com https://core.service.elfsight.com https://api.elfsight.com https://vercel.live",
-              "frame-src 'self' https://apps.elfsight.com https://elfsightcdn.com https://vercel.live",
+              "font-src 'self' data: https://*.elfsightcdn.com",
+              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://*.elfsightcdn.com https://*.elfsight.com https://vercel.live https://app.stevenriosfx.com",
+              "frame-src 'self' https://*.elfsight.com https://*.elfsightcdn.com https://vercel.live",
               "worker-src 'self' blob:",
             ].join('; ')
           },
