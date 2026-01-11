@@ -20,11 +20,11 @@ function SignInForm() {
         </div>
       )}
 
-      {/* Form - Submit directo a Laravel */}
-<form 
-  action="https://app.stevenriosfx.com/auth/login" 
-  method="POST"
->
+      {/* Form - Submit directo a Laravel con validaciones mejoradas */}
+      <form 
+        action="https://app.stevenriosfx.com/auth/login" 
+        method="POST"
+      >
         <div className="space-y-4">
           
           {/* Tipo de Usuario */}
@@ -42,6 +42,7 @@ function SignInForm() {
                   value="student"
                   className="peer sr-only"
                   defaultChecked
+                  required
                 />
                 <div className="flex flex-col items-center gap-2 rounded-lg border-2 border-gray-200 bg-white p-4 transition-all peer-checked:border-blue-600 peer-checked:bg-blue-50">
                   <svg className="h-6 w-6 text-gray-400 transition-colors peer-checked:text-blue-600 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,7 +94,7 @@ function SignInForm() {
             </div>
           </div>
 
-          {/* Usuario ID */}
+          {/* Usuario ID - CON VALIDACIONES */}
           <div>
             <label className="mb-1 block text-sm font-medium text-gray-700" htmlFor="usuario_id">
               Usuario
@@ -106,10 +107,14 @@ function SignInForm() {
               placeholder="Tu usuario"
               autoComplete="username"
               required
+              minLength={3}
+              maxLength={50}
+              pattern="[a-zA-Z0-9_-]+"
+              title="Solo letras, números, guiones y guiones bajos (3-50 caracteres)"
             />
           </div>
 
-          {/* Password */}
+          {/* Password - CON VALIDACIONES */}
           <div>
             <label className="mb-1 block text-sm font-medium text-gray-700" htmlFor="password">
               Contraseña
@@ -122,6 +127,8 @@ function SignInForm() {
               autoComplete="current-password"
               placeholder="••••••••"
               required
+              minLength={6}
+              title="Mínimo 6 caracteres"
             />
           </div>
 
