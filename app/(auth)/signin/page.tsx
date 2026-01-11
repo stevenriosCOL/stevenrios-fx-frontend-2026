@@ -20,7 +20,7 @@ function SignInForm() {
         </div>
       )}
 
-      {/* Form - Submit directo a Laravel con validaciones mejoradas */}
+      {/* Form - Submit directo a Laravel con validaciones */}
       <form 
         action="https://app.stevenriosfx.com/auth/login" 
         method="POST"
