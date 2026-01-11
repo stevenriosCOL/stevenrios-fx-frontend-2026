@@ -1,11 +1,61 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { Suspense } from 'react';
+import { Suspense, useState, FormEvent } from 'react';
 
 function SignInForm() {
   const searchParams = useSearchParams();
   const error = searchParams.get('error');
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      // Obtener CSRF token de Laravel
+      const csrfResponse = await fetch('https://app.stevenriosfx.com/sanctum/csrf-cookie', {
+        credentials: 'include',
+      });
+
+      if (!csrfResponse.ok) {
+        throw new Error('Error al obtener token de seguridad');
+      }
+
+      // Enviar credenciales con CSRF token
+      const response = await fetch('https://app.stevenriosfx.com/auth/login', {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          user_type: formData.get('user_type'),
+          usuario_id: formData.get('usuario_id'),
+          password: formData.get('password'),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Credenciales incorrectas');
+      }
+
+      const data = await response.json();
+      
+      // Redirigir al dashboard
+      window.location.href = data.redirect || 'https://app.stevenriosfx.com/dashboard';
+      
+    } catch (error) {
+      console.error('Error en login:', error);
+      // Recargar con error en URL
+      window.location.href = '/signin?error=credenciales';
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <>
@@ -20,11 +70,8 @@ function SignInForm() {
         </div>
       )}
 
-      {/* Form - Submit directo a Laravel */}
-<form 
-  action="https://app.stevenriosfx.com/auth/login" 
-  method="POST"
->
+      {/* Form - Con manejo seguro */}
+      <form onSubmit={handleSubmit}>
         <div className="space-y-4">
           
           {/* Tipo de Usuario */}
@@ -42,6 +89,7 @@ function SignInForm() {
                   value="student"
                   className="peer sr-only"
                   defaultChecked
+                  required
                 />
                 <div className="flex flex-col items-center gap-2 rounded-lg border-2 border-gray-200 bg-white p-4 transition-all peer-checked:border-blue-600 peer-checked:bg-blue-50">
                   <svg className="h-6 w-6 text-gray-400 transition-colors peer-checked:text-blue-600 group-hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -106,6 +154,10 @@ function SignInForm() {
               placeholder="Tu usuario"
               autoComplete="username"
               required
+              minLength={3}
+              maxLength={50}
+              pattern="[a-zA-Z0-9_-]+"
+              title="Solo letras, números, guiones y guiones bajos"
             />
           </div>
 
@@ -122,6 +174,7 @@ function SignInForm() {
               autoComplete="current-password"
               placeholder="••••••••"
               required
+              minLength={6}
             />
           </div>
 
@@ -131,9 +184,10 @@ function SignInForm() {
         <div className="mt-6">
           <button 
             type="submit"
-            className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]"
+            disabled={loading}
+            className="btn w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Iniciar Sesión
+            {loading ? 'Iniciando sesión...' : 'Iniciar Sesión'}
           </button>
         </div>
       </form>

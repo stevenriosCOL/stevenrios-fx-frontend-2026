@@ -2,10 +2,8 @@ const withMDX = require("@next/mdx")();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure `pageExtensions` to include MDX files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   
-  // Security headers
   async headers() {
     return [
       {
@@ -43,12 +41,12 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://elfsightcdn.com https://static.elfsight.com https://apps.elfsight.com",
-              "style-src 'self' 'unsafe-inline' https://elfsightcdn.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://elfsightcdn.com https://universe-static.elfsightcdn.com https://static.elfsight.com https://apps.elfsight.com https://vercel.live",
+              "style-src 'self' 'unsafe-inline' https://elfsightcdn.com https://universe-static.elfsightcdn.com",
               "img-src 'self' data: https: blob:",
-              "font-src 'self' data: https://elfsightcdn.com",
-              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://elfsightcdn.com https://core.service.elfsight.com https://api.elfsight.com",
-              "frame-src 'self' https://apps.elfsight.com https://elfsightcdn.com",
+              "font-src 'self' data: https://elfsightcdn.com https://universe-static.elfsightcdn.com",
+              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://elfsightcdn.com https://universe-static.elfsightcdn.com https://core.service.elfsight.com https://api.elfsight.com https://vercel.live",
+              "frame-src 'self' https://apps.elfsight.com https://elfsightcdn.com https://vercel.live",
               "worker-src 'self' blob:",
             ].join('; ')
           },
