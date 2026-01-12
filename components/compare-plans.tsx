@@ -38,7 +38,7 @@ export default function ComparePlans() {
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Escuela GOLD completa
+                  Escuela GOLD + Fundamentos
                 </div>
               </div>
 
@@ -48,33 +48,23 @@ export default function ComparePlans() {
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Psicología del trading
-                </div>
-              </div>
-
-              {/* Centro Meditación */}
-              <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-4"
-                aria-hidden="true"
-              >
-                <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Centro de meditación
+                  Psicología + Mindset
                 </div>
               </div>
 
               {/* Finanzas */}
               <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-5"
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-4"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Finanzas personales
+                  Finanzas + Fintech + Crypto básico
                 </div>
               </div>
 
               {/* # Trading Avanzado */}
               <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-6"
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-5"
                 aria-hidden="true"
               >
                 <div className="mb-2 mt-5 font-bold text-gray-900">
@@ -84,47 +74,47 @@ export default function ComparePlans() {
 
               {/* Crypto Mastery */}
               <div
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-6"
+                aria-hidden="true"
+              >
+                <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
+                  Crypto Mastery avanzado
+                </div>
+              </div>
+
+              {/* Trading PRO */}
+              <div
                 className="flex flex-col justify-end px-6 max-md:hidden md:order-7"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Crypto Mastery
+                  Trading PRO avanzado
                 </div>
               </div>
 
-              {/* Estrategia XAUUSD */}
+              {/* Estrategia completa */}
               <div
                 className="flex flex-col justify-end px-6 max-md:hidden md:order-8"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Estrategia XAUUSD
+                  Maestría 0-6 Cifras + 2025
                 </div>
               </div>
 
-              {/* Fibonacci Institucional */}
+              {/* Prop Firms */}
               <div
                 className="flex flex-col justify-end px-6 max-md:hidden md:order-9"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Fibonacci institucional
-                </div>
-              </div>
-
-              {/* Maestría 0-6 Cifras */}
-              <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-10"
-                aria-hidden="true"
-              >
-                <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Maestría 0-6 Cifras
+                  Prop Firm PRO (fondeo real)
                 </div>
               </div>
 
               {/* # Mentoría y Soporte */}
               <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-11"
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-10"
                 aria-hidden="true"
               >
                 <div className="mb-2 mt-5 font-bold text-gray-900">
@@ -132,39 +122,39 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              {/* Sesiones en vivo */}
+              {/* Sesiones grupales */}
               <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-12"
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-11"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Sesiones en vivo/mes
+                  Sesiones grupales en vivo
                 </div>
               </div>
 
               {/* Chat WhatsApp */}
               <div
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-12"
+                aria-hidden="true"
+              >
+                <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
+                  Chat WhatsApp soporte
+                </div>
+              </div>
+
+              {/* Sesiones 1-1 */}
+              <div
                 className="flex flex-col justify-end px-6 max-md:hidden md:order-13"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Chat directo WhatsApp
-                </div>
-              </div>
-
-              {/* Mentoría 1-1 */}
-              <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-14"
-                aria-hidden="true"
-              >
-                <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
-                  Sesiones 1-1 Steven
+                  Sesiones 1-1 con Steven
                 </div>
               </div>
 
               {/* Duración */}
               <div
-                className="flex flex-col justify-end px-6 max-md:hidden md:order-15"
+                className="flex flex-col justify-end px-6 max-md:hidden md:order-14"
                 aria-hidden="true"
               >
                 <div className="border-b border-gray-200 py-4 text-sm text-gray-700">
@@ -188,7 +178,6 @@ export default function ComparePlans() {
 >
   Comenzar Ahora
 </a>
-
                   </div>
                 </div>
               </div>
@@ -200,7 +189,7 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              {/* Escuela GOLD */}
+              {/* Escuela */}
               <div className="flex flex-col justify-end px-6 md:order-2">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
                   <svg
@@ -211,7 +200,7 @@ export default function ComparePlans() {
                   >
                     <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
                   </svg>
-                  <span className="md:sr-only">Escuela GOLD</span>
+                  <span className="md:sr-only">Escuela</span>
                 </div>
               </div>
 
@@ -230,23 +219,8 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              {/* Meditación */}
-              <div className="flex flex-col justify-end px-6 md:order-4">
-                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
-                  <svg
-                    className="mr-3 shrink-0 fill-emerald-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={12}
-                    height={9}
-                  >
-                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
-                  </svg>
-                  <span className="md:sr-only">Meditación</span>
-                </div>
-              </div>
-
               {/* Finanzas */}
-              <div className="flex flex-col justify-end px-6 md:order-5">
+              <div className="flex flex-col justify-end px-6 md:order-4">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -261,70 +235,70 @@ export default function ComparePlans() {
               </div>
 
               {/* # Trading Avanzado */}
-              <div className="flex flex-col justify-end px-6 md:order-6">
+              <div className="flex flex-col justify-end px-6 md:order-5">
                 <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
                   Trading Avanzado
                 </div>
               </div>
 
               {/* Crypto */}
-              <div className="flex flex-col justify-end px-6 md:order-7">
+              <div className="flex flex-col justify-end px-6 md:order-6">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
                   <span className="md:sr-only">Crypto</span>
                 </div>
               </div>
 
-              {/* XAUUSD */}
-              <div className="flex flex-col justify-end px-6 md:order-8">
+              {/* Trading PRO */}
+              <div className="flex flex-col justify-end px-6 md:order-7">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
-                  <span className="md:sr-only">XAUUSD</span>
-                </div>
-              </div>
-
-              {/* Fibonacci */}
-              <div className="flex flex-col justify-end px-6 md:order-9">
-                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
-                  <span className="md:sr-only">Fibonacci</span>
+                  <span className="md:sr-only">Trading PRO</span>
                 </div>
               </div>
 
               {/* Maestría */}
-              <div className="flex flex-col justify-end px-6 md:order-10">
+              <div className="flex flex-col justify-end px-6 md:order-8">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
                   <span className="md:sr-only">Maestría</span>
                 </div>
               </div>
 
+              {/* Prop Firms */}
+              <div className="flex flex-col justify-end px-6 md:order-9">
+                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
+                  <span className="md:sr-only">Prop Firms</span>
+                </div>
+              </div>
+
               {/* # Mentoría */}
-              <div className="flex flex-col justify-end px-6 md:order-11">
+              <div className="flex flex-col justify-end px-6 md:order-10">
                 <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
                   Mentoría
                 </div>
               </div>
 
-              {/* Sesiones */}
-              <div className="flex flex-col justify-end px-6 md:order-12">
-                <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
-                  0
+              {/* Grupales */}
+              <div className="flex flex-col justify-end px-6 md:order-11">
+                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
+                  <span className="md:sr-only">Grupales</span>
                 </div>
               </div>
 
               {/* WhatsApp */}
-              <div className="flex flex-col justify-end px-6 md:order-13">
+              <div className="flex flex-col justify-end px-6 md:order-12">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
                   <span className="md:sr-only">WhatsApp</span>
                 </div>
               </div>
 
               {/* 1-1 */}
-              <div className="flex flex-col justify-end px-6 md:order-14">
+              <div className="flex flex-col justify-end px-6 md:order-13">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only">
                   <span className="md:sr-only">1-1</span>
                 </div>
               </div>
 
               {/* Duración */}
-              <div className="flex flex-col justify-end px-6 md:order-15">
+              <div className="flex flex-col justify-end px-6 md:order-14">
                 <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
                   12 meses
                 </div>
@@ -348,7 +322,6 @@ export default function ComparePlans() {
 >
   Comenzar Ahora
 </a>
-
                   </div>
                 </div>
               </div>
@@ -399,27 +372,14 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-5">
-                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
-                  <svg
-                    className="mr-3 shrink-0 fill-emerald-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={12}
-                    height={9}
-                  >
-                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
-                  </svg>
-                </div>
-              </div>
-
               {/* # Trading Avanzado */}
-              <div className="flex flex-col justify-end px-6 md:order-6">
+              <div className="flex flex-col justify-end px-6 md:order-5">
                 <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
                   Trading Avanzado
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-7">
+              <div className="flex flex-col justify-end px-6 md:order-6">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -432,41 +392,26 @@ export default function ComparePlans() {
                 </div>
               </div>
 
+              <div className="flex flex-col justify-end px-6 md:order-7">
+                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only" />
+              </div>
+
               <div className="flex flex-col justify-end px-6 md:order-8">
-                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
-                  <svg
-                    className="mr-3 shrink-0 fill-emerald-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={12}
-                    height={9}
-                  >
-                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
-                  </svg>
-                </div>
+                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only" />
               </div>
 
               <div className="flex flex-col justify-end px-6 md:order-9">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only" />
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-10">
-                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only" />
-              </div>
-
               {/* # Mentoría */}
-              <div className="flex flex-col justify-end px-6 md:order-11">
+              <div className="flex flex-col justify-end px-6 md:order-10">
                 <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
                   Mentoría
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-12">
-                <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
-                  2
-                </div>
-              </div>
-
-              <div className="flex flex-col justify-end px-6 md:order-13">
+              <div className="flex flex-col justify-end px-6 md:order-11">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -479,11 +424,24 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-14">
+              <div className="flex flex-col justify-end px-6 md:order-12">
+                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
+                  <svg
+                    className="mr-3 shrink-0 fill-emerald-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={12}
+                    height={9}
+                  >
+                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-end px-6 md:order-13">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700 max-md:sr-only" />
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-15">
+              <div className="flex flex-col justify-end px-6 md:order-14">
                 <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
                   18 meses
                 </div>
@@ -505,7 +463,6 @@ export default function ComparePlans() {
 >
   Comenzar Ahora
 </a>
-
                   </div>
                 </div>
               </div>
@@ -556,7 +513,14 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-5">
+              {/* # Trading Avanzado */}
+              <div className="flex flex-col justify-end px-6 md:order-5">
+                <div className="mb-2 mt-5 font-bold text-gray-200 md:sr-only">
+                  Trading Avanzado
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-6">
                 <div className="flex h-full items-center border-b border-gray-600 py-4 text-sm">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -566,13 +530,6 @@ export default function ComparePlans() {
                   >
                     <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
                   </svg>
-                </div>
-              </div>
-
-              {/* # Trading Avanzado */}
-              <div className="flex flex-col justify-end px-6 md:order-6">
-                <div className="mb-2 mt-5 font-bold text-gray-200 md:sr-only">
-                  Trading Avanzado
                 </div>
               </div>
 
@@ -603,45 +560,17 @@ export default function ComparePlans() {
               </div>
 
               <div className="flex flex-col justify-end px-6 text-gray-300 md:order-9">
-                <div className="flex h-full items-center border-b border-gray-600 py-4 text-sm">
-                  <svg
-                    className="mr-3 shrink-0 fill-emerald-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={12}
-                    height={9}
-                  >
-                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
-                  </svg>
-                </div>
-              </div>
-
-              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-10">
-                <div className="flex h-full items-center border-b border-gray-600 py-4 text-sm">
-                  <svg
-                    className="mr-3 shrink-0 fill-emerald-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={12}
-                    height={9}
-                  >
-                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
-                  </svg>
-                </div>
+                <div className="flex h-full items-center border-b border-gray-600 py-4 text-sm max-md:sr-only" />
               </div>
 
               {/* # Mentoría */}
-              <div className="flex flex-col justify-end px-6 md:order-11">
+              <div className="flex flex-col justify-end px-6 md:order-10">
                 <div className="mb-2 mt-5 font-bold text-gray-200 md:sr-only">
                   Mentoría
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-12">
-                <div className="h-full border-b border-gray-600 py-4 text-sm">
-                  4
-                </div>
-              </div>
-
-              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-13">
+              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-11">
                 <div className="flex h-full items-center border-b border-gray-600 py-4 text-sm">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -654,13 +583,26 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-14">
-                <div className="h-full border-b border-gray-600 py-4 text-sm">
-                  3 grupales
+              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-12">
+                <div className="flex h-full items-center border-b border-gray-600 py-4 text-sm">
+                  <svg
+                    className="mr-3 shrink-0 fill-emerald-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={12}
+                    height={9}
+                  >
+                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
+                  </svg>
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-15">
+              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-13">
+                <div className="h-full border-b border-gray-600 py-4 text-sm">
+                  18 (3/mes x 6 meses)
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-end px-6 text-gray-300 md:order-14">
                 <div className="h-full border-b border-gray-600 py-4 text-sm">
                   24 meses
                 </div>
@@ -682,7 +624,6 @@ export default function ComparePlans() {
 >
   Comenzar Ahora
 </a>
-
                   </div>
                 </div>
               </div>
@@ -733,7 +674,14 @@ export default function ComparePlans() {
                 </div>
               </div>
 
+              {/* # Trading Avanzado */}
               <div className="flex flex-col justify-end px-6 md:order-5">
+                <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
+                  Trading Avanzado
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-end px-6 md:order-6">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -743,13 +691,6 @@ export default function ComparePlans() {
                   >
                     <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
                   </svg>
-                </div>
-              </div>
-
-              {/* # Trading Avanzado */}
-              <div className="flex flex-col justify-end px-6 md:order-6">
-                <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
-                  Trading Avanzado
                 </div>
               </div>
 
@@ -792,33 +733,14 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-10">
-                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
-                  <svg
-                    className="mr-3 shrink-0 fill-emerald-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={12}
-                    height={9}
-                  >
-                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
-                  </svg>
-                </div>
-              </div>
-
               {/* # Mentoría */}
-              <div className="flex flex-col justify-end px-6 md:order-11">
+              <div className="flex flex-col justify-end px-6 md:order-10">
                 <div className="mb-2 mt-5 font-bold text-gray-900 md:sr-only">
                   Mentoría
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-12">
-                <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
-                  4
-                </div>
-              </div>
-
-              <div className="flex flex-col justify-end px-6 md:order-13">
+              <div className="flex flex-col justify-end px-6 md:order-11">
                 <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
                   <svg
                     className="mr-3 shrink-0 fill-emerald-500"
@@ -831,13 +753,26 @@ export default function ComparePlans() {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-14">
-                <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
-                  10 privadas
+              <div className="flex flex-col justify-end px-6 md:order-12">
+                <div className="flex h-full items-center border-b border-gray-200 py-4 text-sm text-gray-700">
+                  <svg
+                    className="mr-3 shrink-0 fill-emerald-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={12}
+                    height={9}
+                  >
+                    <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z"></path>
+                  </svg>
                 </div>
               </div>
 
-              <div className="flex flex-col justify-end px-6 md:order-15">
+              <div className="flex flex-col justify-end px-6 md:order-13">
+                <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
+                  48 (4/mes x 12 meses)
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-end px-6 md:order-14">
                 <div className="h-full border-b border-gray-200 py-4 text-sm text-gray-700">
                   3 años
                 </div>

@@ -36,7 +36,7 @@ export default function PricingTables() {
                   <div className="mb-4 flex items-baseline border-b border-dashed border-gray-200 pb-4">
                     <span className="text-2xl font-bold text-gray-900">$</span>
                     <span className="text-4xl font-bold tabular-nums text-gray-900">
-                      497
+                      297
                     </span>
                     <span className="pl-1 text-sm text-gray-600">
                       /pago único
@@ -67,6 +67,16 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
+                    <span>Fundamentos del trading</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="mr-2 h-3 w-3 shrink-0 fill-current text-emerald-500"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                    </svg>
                     <span>Psicología del trading + control emocional</span>
                   </li>
                   <li className="flex items-center">
@@ -77,7 +87,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Centro de meditación (técnicas completas)</span>
+                    <span>Centro de meditación (mindset)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -87,7 +97,17 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Finanzas personales básicas</span>
+                    <span>Finanzas personales + Fintech</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="mr-2 h-3 w-3 shrink-0 fill-current text-emerald-500"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                    </svg>
+                    <span>Mundo Crypto (básico)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -108,16 +128,6 @@ export default function PricingTables() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <span>Actualizaciones incluidas</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg
-                      className="mr-2 h-3 w-3 shrink-0 fill-current text-emerald-500"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
-                    <span>Certificado de finalización</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -142,7 +152,7 @@ export default function PricingTables() {
                   <div className="mb-4 flex items-baseline border-b border-dashed border-gray-200 pb-4">
                     <span className="text-2xl font-bold text-gray-900">$</span>
                     <span className="text-4xl font-bold tabular-nums text-gray-900">
-                      997
+                      597
                     </span>
                     <span className="pl-1 text-sm text-gray-600">
                       /pago único
@@ -151,7 +161,7 @@ export default function PricingTables() {
                   <div className="mb-3 grow text-sm text-gray-700">
                     <strong>De inconsistente a rentable.</strong>
                     <br />
-                    Acceso 18 meses. Incluye Crypto + XAUUSD.
+                    Acceso 18 meses. Incluye Crypto avanzado.
                   </div>
                 </div>
                 <ul className="grow space-y-2 text-sm text-gray-700">
@@ -175,7 +185,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Crypto Mastery completo (básico a avanzado)</span>
+                    <span>Crypto Mastery completo (avanzado)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -185,7 +195,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Futuros de criptomonedas</span>
+                    <span>Estrategia XAUUSD (Bancos + oro)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -195,7 +205,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Financial Master (cuentas fondeadas)</span>
+                    <span>Índices sintéticos (V75, Crash, Boom)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -205,27 +215,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Estrategia XAUUSD completa</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg
-                      className="mr-2 h-3 w-3 shrink-0 fill-current text-emerald-500"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
-                    <span>Fibonacci intermedio</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg
-                      className="mr-2 h-3 w-3 shrink-0 fill-current text-emerald-500"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
-                    <span>2 sesiones en vivo mensuales</span>
+                    <span>Sesiones grupales en vivo</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -260,7 +250,7 @@ export default function PricingTables() {
                   <div className="mb-4 flex items-baseline border-b border-dashed border-gray-600 pb-4">
                     <span className="text-2xl font-bold text-gray-200">$</span>
                     <span className="text-4xl font-bold tabular-nums text-gray-200">
-                      1,997
+                      997
                     </span>
                     <span className="pl-1 text-sm text-gray-400">
                       /pago único
@@ -268,10 +258,10 @@ export default function PricingTables() {
                   </div>
                   <div className="mb-3 text-sm text-gray-300">
                     <strong className="text-gray-100">
-                      Formación completa para trader profesional.
+                      La estrategia completa de Steven.
                     </strong>
                     <br />
-                    Acceso 24 meses. Volúmenes institucionales.
+                    Acceso 24 meses. Incluye mentoría 1-1.
                   </div>
                 </div>
                 <ul className="grow space-y-2 text-sm text-gray-400">
@@ -295,7 +285,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Maestría 0-6 Cifras (volúmenes grandes)</span>
+                    <span>Trading PRO (avanzado)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -305,7 +295,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Fibonacci avanzado institucional</span>
+                    <span>Maestría 0-6 Cifras (estrategia 100%)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -315,7 +305,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>E-book exclusivo Fibonacci</span>
+                    <span>Maestría 2025 Actualizada</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -325,7 +315,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Manipulación de mercado institucional</span>
+                    <span>18 sesiones 1-1 con Steven (3/mes x 6 meses)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -335,7 +325,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Liquidez bancaria (timing perfecto)</span>
+                    <span>Sesiones grupales en vivo</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -345,17 +335,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>4 sesiones en vivo mensuales</span>
-                  </li>
-                  <li className="flex items-center">
-                    <svg
-                      className="mr-2 h-3 w-3 shrink-0 fill-current text-emerald-500"
-                      viewBox="0 0 12 12"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                    </svg>
-                    <span>3 sesiones personalizadas grupales</span>
+                    <span>Descargables premium exclusivos</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -390,16 +370,16 @@ export default function PricingTables() {
                   <div className="mb-4 flex items-baseline border-b border-dashed border-gray-200 pb-4">
                     <span className="text-2xl font-bold text-gray-900">$</span>
                     <span className="text-4xl font-bold tabular-nums text-gray-900">
-                      2,997
+                      1,797
                     </span>
                     <span className="pl-1 text-sm text-gray-600">
                       /pago único
                     </span>
                   </div>
                   <div className="mb-3 grow text-sm text-gray-700">
-                    <strong>Mentoría directa con Steven.</strong>
+                    <strong>Prop Firms + Mentoría completa.</strong>
                     <br />
-                    Acceso 3 años. Atención personalizada 1-1.
+                    Acceso 3 años. 48 sesiones 1-1 directas.
                   </div>
                 </div>
                 <ul className="grow space-y-2 text-sm text-gray-700">
@@ -423,7 +403,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Maestría 2025 Actualizada</span>
+                    <span>Prop Firm PRO (proceso real de fondeo)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -433,7 +413,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>10 sesiones 1-1 privadas con Steven</span>
+                    <span>48 sesiones 1-1 con Steven (4/mes x 12 meses)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -443,7 +423,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Mentoría WhatsApp directa (3 meses)</span>
+                    <span>Mentoría WhatsApp directa (6 meses)</span>
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -483,7 +463,7 @@ export default function PricingTables() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Descuentos futuros programas (50%)</span>
+                    <span>Descuento 50% futuros programas</span>
                   </li>
                   <li className="flex items-center">
                     <svg
