@@ -4,6 +4,105 @@ const withMDX = require("@next/mdx")();
 const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   
+  // ✅ NUEVO: Redirects para URLs antiguas
+  async redirects() {
+    return [
+      // URLs antiguas → Nuevas páginas
+      {
+        source: '/login',
+        destination: '/signin',
+        permanent: true,
+      },
+      {
+        source: '/politicadeprivacidad',
+        destination: '/support',
+        permanent: true,
+      },
+      {
+        source: '/terminosycondicciones',
+        destination: '/support',
+        permanent: true,
+      },
+      {
+        source: '/checkout',
+        destination: '/pricing',
+        permanent: true,
+      },
+      {
+        source: '/inicio',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/mihistoria',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/recuperar',
+        destination: '/reset-password',
+        permanent: true,
+      },
+      {
+        source: '/recpass',
+        destination: '/reset-password',
+        permanent: true,
+      },
+      {
+        source: '/nuevoAsesor',
+        destination: '/support',
+        permanent: true,
+      },
+      {
+        source: '/totalesgracias2022',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.php',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/ofertadelaño',
+        destination: '/pricing',
+        permanent: true,
+      },
+      // Planes antiguos → Pricing
+      {
+        source: '/planes/:slug*',
+        destination: '/pricing',
+        permanent: true,
+      },
+      // Webhooks antiguos → API
+      {
+        source: '/nuevoUsuarioWompiCheckout/:path*',
+        destination: '/api/hello',
+        permanent: true,
+      },
+      {
+        source: '/nuevoUsuarioWompiCheckoutCripto/:path*',
+        destination: '/api/hello',
+        permanent: true,
+      },
+      {
+        source: '/nuevoUsuarioMercadoCheckout/:path*',
+        destination: '/api/hello',
+        permanent: true,
+      },
+      {
+        source: '/nuevoUsuarioMercadoCheckoutCripto/:path*',
+        destination: '/api/hello',
+        permanent: true,
+      },
+      {
+        source: '/generaraccesstocken/:path*',
+        destination: '/api/hello',
+        permanent: true,
+      },
+    ]
+  },
+  
   async headers() {
     return [
       {
