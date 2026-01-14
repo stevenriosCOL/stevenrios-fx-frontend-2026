@@ -2,11 +2,6 @@
 
 import { useState, FormEvent } from 'react';
 
-export const metadata = {
-  title: "Reset Password - Simple",
-  description: "Page description",
-};
-
 export default function ResetPassword() {
   const [email, setEmail] = useState('');
 
