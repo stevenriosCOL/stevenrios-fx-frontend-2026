@@ -96,6 +96,7 @@ export default function MobileMenu() {
             {[
               { href: "/about", label: "Nosotros" },
               { href: "/pricing", label: "Programas" },
+              { href: "/libros/30-dias-peor-enemigo", label: "Libros" },
               { href: "/customers", label: "Testimonios" },
               { href: "/blog", label: "Blog" },
               { href: "/support", label: "Soporte" },

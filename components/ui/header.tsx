@@ -72,6 +72,15 @@ export default function Header() {
                   </Link>
                 </li>
 
+                                <li>
+                  <Link
+                    href="/libros/30-dias-peor-enemigo"
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Libros
+                  </Link>
+                </li>
+
                 {/* NUEVO: CriptApp (externo) */}
                 <li>
                   <a
