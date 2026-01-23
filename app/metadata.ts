@@ -1,37 +1,84 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://stevenriosfx.com'),
+  // ============================================
+  // 🔗 BASE URL (CON WWW)
+  // ============================================
+  metadataBase: new URL('https://www.stevenriosfx.com'),
+  
+  // ============================================
+  // 🔍 SEO BÁSICO
+  // ============================================
   title: {
-    default: 'SR Academy | Trading Profesional con Psicología y Estrategia',
+    default: 'SR Academy: Curso Trading Profesional | +2,000 Traders Certificados',
     template: '%s | SR Academy'
   },
-  description: 'Aprende trading profesional en Forex, Oro (XAUUSD) y Crypto con metodología comprobada. +2,000 alumnos en 60+ países. Psicología + Fibonacci + Risk Management.',
-  keywords: ['trading', 'forex', 'oro', 'XAUUSD', 'criptomonedas', 'fibonacci', 'psicología trading', 'SR Academy', 'Steven Rios'],
-  authors: [{ name: 'Steven Rios FX' }],
-  creator: 'SR Academy',
+  description: 'Aprende trading profesional con metodología estructurada: análisis técnico, psicología del trading y gestión de riesgo. +2,000 alumnos. Mentoría en vivo, comunidad activa y sistema comprobado. Sin promesas vacías, solo ejecución real.',
+  
+  // ============================================
+  // 🏷️ KEYWORDS
+  // ============================================
+  keywords: [
+    'trading profesional',
+    'curso trading',
+    'psicología del trading',
+    'análisis técnico',
+    'gestión de riesgo',
+    'trading forex',
+    'trading oro XAUUSD',
+    'trading criptomonedas',
+    'academia trading',
+    'SR Academy',
+    'Steven Rios',
+    'fibonacci trading',
+    'mentoría trading',
+    'curso trading Colombia',
+  ],
+  
+  // ============================================
+  // ✍️ AUTORÍA
+  // ============================================
+  authors: [{ 
+    name: 'Steven Rios', 
+    url: 'https://www.stevenriosfx.com/about' 
+  }],
+  creator: 'Steven Rios',
   publisher: 'SR Academy',
+  
+  // ============================================
+  // 🌍 OPEN GRAPH (Facebook, Instagram, WhatsApp, LinkedIn)
+  // ============================================
   openGraph: {
     type: 'website',
-    locale: 'es_ES',
-    url: 'https://stevenriosfx.com',
-    title: 'SR Academy | Trading Profesional',
-    description: 'Domina el trading con psicología y estrategia. +2,000 alumnos en 60+ países.',
+    locale: 'es_CO',
+    url: 'https://www.stevenriosfx.com',
     siteName: 'SR Academy',
+    title: 'SR Academy: Aprende Trading Profesional Sin Promesas Vacías',
+    description: 'Metodología de 4 pilares: análisis técnico + gestión de riesgo + psicología + estrategia. +2,000 traders formados. Sistema real, sin humo.',
     images: [{
-      url: '/images/og-image.jpg', // NECESITAS CREAR ESTA IMAGEN
+      url: '/images/og-image.jpg', // 🚨 DEBES CREAR ESTA IMAGEN (1200x630px)
       width: 1200,
       height: 630,
-      alt: 'SR Academy - Trading Profesional'
+      alt: 'SR Academy - Curso de Trading Profesional con Steven Rios',
+      type: 'image/jpeg',
     }]
   },
+  
+  // ============================================
+  // 🐦 TWITTER / X
+  // ============================================
   twitter: {
     card: 'summary_large_image',
-    title: 'SR Academy | Trading Profesional',
-    description: 'Domina el trading con psicología y estrategia comprobada',
+    site: '@stevenriosfx',
+    creator: '@stevenriosfx',
+    title: 'SR Academy: Trading Profesional | +2,000 Traders Formados',
+    description: 'Metodología estructurada con análisis técnico, psicología del trading y gestión de riesgo. Sin promesas vacías.',
     images: ['/images/og-image.jpg'],
-    creator: '@stevenriosfx'
   },
+  
+  // ============================================
+  // 🤖 ROBOTS
+  // ============================================
   robots: {
     index: true,
     follow: true,
@@ -43,7 +90,36 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  
+  // ============================================
+  // 🔗 CANONICAL (Forzar WWW)
+  // ============================================
+  alternates: {
+    canonical: 'https://www.stevenriosfx.com',
+  },
+  
+  // ============================================
+  // ✅ VERIFICACIÓN GOOGLE SEARCH CONSOLE
+  // ============================================
   verification: {
-    google: 'o1yixiRBB8xYhEbOGc24fEaxNcrY2mq6eMCRnUFfzUw', // Lo obtienes en Google Search Console
+    google: 'o1yixiRBB8xYhEbOGc24fEaxNcrY2mq6eMCRnUFfzUw',
+  },
+  
+  // ============================================
+  // 🎨 BRANDING / PWA
+  // ============================================
+  applicationName: 'SR Academy',
+  category: 'Education',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'SR Academy',
+  },
+  formatDetection: {
+    telephone: false,
   },
 }

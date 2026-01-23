@@ -87,11 +87,17 @@ export default function MethodologyPillars() {
           {/* Section header */}
           <div className="pb-8 text-center md:pb-12">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-              Nuestra Metodología: 4 Pilares Interconectados
+              Sistema de Trading Profesional:{" "}
+              <span className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 bg-clip-text text-transparent">
+                Los 4 Pilares de SR Academy
+              </span>
             </h2>
-            <p className="text-lg text-gray-700">
-              No basta con saber Fibonacci. Necesitas dominar tu mente primero,
-              luego la técnica.
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              El <strong className="text-gray-900">90% del éxito en trading es psicología</strong>, 
+              el 10% es estrategia. Nuestro sistema integra{" "}
+              <strong className="text-gray-900">análisis técnico</strong>,{" "}
+              <strong className="text-gray-900">gestión de riesgo</strong> y{" "}
+              <strong className="text-gray-900">disciplina mental</strong> en un método comprobado.
             </p>
           </div>
 
@@ -104,8 +110,9 @@ export default function MethodologyPillars() {
                     className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${
                       selectedTab === 0
                         ? "bg-gray-800 text-gray-200"
-                        : "text-gray-700"
+                        : "text-gray-700 hover:text-gray-900"
                     }`}
+                    aria-label="Psicología del Trading"
                   >
                     {tabIcons.brain}
                     <span>Psicología</span>
@@ -116,8 +123,9 @@ export default function MethodologyPillars() {
                     className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${
                       selectedTab === 1
                         ? "bg-gray-800 text-gray-200"
-                        : "text-gray-700"
+                        : "text-gray-700 hover:text-gray-900"
                     }`}
+                    aria-label="Análisis Técnico"
                   >
                     {tabIcons.chart}
                     <span>Análisis</span>
@@ -128,8 +136,9 @@ export default function MethodologyPillars() {
                     className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${
                       selectedTab === 2
                         ? "bg-gray-800 text-gray-200"
-                        : "text-gray-700"
+                        : "text-gray-700 hover:text-gray-900"
                     }`}
+                    aria-label="Gestión de Riesgo"
                   >
                     {tabIcons.shield}
                     <span>Riesgo</span>
@@ -140,8 +149,9 @@ export default function MethodologyPillars() {
                     className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${
                       selectedTab === 3
                         ? "bg-gray-800 text-gray-200"
-                        : "text-gray-700"
+                        : "text-gray-700 hover:text-gray-900"
                     }`}
+                    aria-label="Estrategia y Ejecución"
                   >
                     {tabIcons.target}
                     <span>Ejecución</span>
@@ -323,7 +333,7 @@ export default function MethodologyPillars() {
                       src={Logo01}
                       width={65}
                       height={65}
-                      alt="Centro metodología"
+                      alt="SR Academy - Sistema de Trading Profesional"
                     />
                   </div>
                 </div>
@@ -349,7 +359,7 @@ export default function MethodologyPillars() {
                               src={Logo02}
                               width={38}
                               height={38}
-                              alt="Logo 02"
+                              alt="Disciplina en trading"
                             />
                           </div>
                         </div>
@@ -362,7 +372,7 @@ export default function MethodologyPillars() {
                               src={Logo03}
                               width={38}
                               height={38}
-                              alt="Logo 03"
+                              alt="Emociones en trading"
                             />
                           </div>
                         </div>
@@ -375,7 +385,7 @@ export default function MethodologyPillars() {
                               src={Logo04}
                               width={29}
                               height={26}
-                              alt="Logo 04"
+                              alt="Mentalidad trader"
                             />
                           </div>
                         </div>
@@ -388,7 +398,7 @@ export default function MethodologyPillars() {
                               src={Logo05}
                               width={38}
                               height={38}
-                              alt="Logo 05"
+                              alt="Plan de trading"
                             />
                           </div>
                         </div>
@@ -401,7 +411,7 @@ export default function MethodologyPillars() {
                               src={Logo06}
                               width={38}
                               height={38}
-                              alt="Logo 06"
+                              alt="Gestión emocional"
                             />
                           </div>
                         </div>
@@ -414,7 +424,7 @@ export default function MethodologyPillars() {
                               src={Logo07}
                               width={38}
                               height={38}
-                              alt="Logo 07"
+                              alt="Journaling trading"
                             />
                           </div>
                         </div>
@@ -427,7 +437,7 @@ export default function MethodologyPillars() {
                               src={Logo08}
                               width={38}
                               height={38}
-                              alt="Logo 08"
+                              alt="Paciencia trading"
                             />
                           </div>
                         </div>
@@ -440,7 +450,7 @@ export default function MethodologyPillars() {
                               src={Logo09}
                               width={38}
                               height={38}
-                              alt="Logo 09"
+                              alt="Consistencia trading"
                             />
                           </div>
                         </div>
@@ -467,7 +477,7 @@ export default function MethodologyPillars() {
                               src={Logo03}
                               width={38}
                               height={38}
-                              alt="Logo 03"
+                              alt="Fibonacci trading"
                             />
                           </div>
                         </div>
@@ -480,7 +490,7 @@ export default function MethodologyPillars() {
                               src={Logo04}
                               width={38}
                               height={38}
-                              alt="Logo 04"
+                              alt="Price action"
                             />
                           </div>
                         </div>
@@ -493,7 +503,7 @@ export default function MethodologyPillars() {
                               src={Logo05}
                               width={38}
                               height={38}
-                              alt="Logo 05"
+                              alt="Estructuras de mercado"
                             />
                           </div>
                         </div>
@@ -506,7 +516,7 @@ export default function MethodologyPillars() {
                               src={Logo02}
                               width={38}
                               height={38}
-                              alt="Logo 02"
+                              alt="Soportes y resistencias"
                             />
                           </div>
                         </div>
@@ -519,7 +529,7 @@ export default function MethodologyPillars() {
                               src={Logo07}
                               width={38}
                               height={38}
-                              alt="Logo 07"
+                              alt="Velas japonesas"
                             />
                           </div>
                         </div>
@@ -532,7 +542,7 @@ export default function MethodologyPillars() {
                               src={Logo06}
                               width={38}
                               height={38}
-                              alt="Logo 06"
+                              alt="Tendencias"
                             />
                           </div>
                         </div>
@@ -545,7 +555,7 @@ export default function MethodologyPillars() {
                               src={Logo09}
                               width={38}
                               height={38}
-                              alt="Logo 09"
+                              alt="Indicadores técnicos"
                             />
                           </div>
                         </div>
@@ -558,7 +568,7 @@ export default function MethodologyPillars() {
                               src={Logo08}
                               width={38}
                               height={38}
-                              alt="Logo 08"
+                              alt="Patrones gráficos"
                             />
                           </div>
                         </div>
@@ -585,7 +595,7 @@ export default function MethodologyPillars() {
                               src={Logo02}
                               width={38}
                               height={38}
-                              alt="Logo 02"
+                              alt="Stop loss"
                             />
                           </div>
                         </div>
@@ -598,7 +608,7 @@ export default function MethodologyPillars() {
                               src={Logo03}
                               width={38}
                               height={38}
-                              alt="Logo 03"
+                              alt="Take profit"
                             />
                           </div>
                         </div>
@@ -611,7 +621,7 @@ export default function MethodologyPillars() {
                               src={Logo04}
                               width={38}
                               height={38}
-                              alt="Logo 04"
+                              alt="Tamaño de posición"
                             />
                           </div>
                         </div>
@@ -624,7 +634,7 @@ export default function MethodologyPillars() {
                               src={Logo05}
                               width={38}
                               height={38}
-                              alt="Logo 05"
+                              alt="Risk reward ratio"
                             />
                           </div>
                         </div>
@@ -637,7 +647,7 @@ export default function MethodologyPillars() {
                               src={Logo06}
                               width={38}
                               height={38}
-                              alt="Logo 06"
+                              alt="Capital management"
                             />
                           </div>
                         </div>
@@ -650,7 +660,7 @@ export default function MethodologyPillars() {
                               src={Logo07}
                               width={38}
                               height={38}
-                              alt="Logo 07"
+                              alt="Drawdown control"
                             />
                           </div>
                         </div>
@@ -663,7 +673,7 @@ export default function MethodologyPillars() {
                               src={Logo08}
                               width={38}
                               height={38}
-                              alt="Logo 08"
+                              alt="Apalancamiento"
                             />
                           </div>
                         </div>
@@ -676,7 +686,7 @@ export default function MethodologyPillars() {
                               src={Logo09}
                               width={38}
                               height={38}
-                              alt="Logo 09"
+                              alt="Protección de capital"
                             />
                           </div>
                         </div>
@@ -703,7 +713,7 @@ export default function MethodologyPillars() {
                               src={Logo03}
                               width={38}
                               height={38}
-                              alt="Logo 03"
+                              alt="Setups de trading"
                             />
                           </div>
                         </div>
@@ -716,7 +726,7 @@ export default function MethodologyPillars() {
                               src={Logo04}
                               width={38}
                               height={38}
-                              alt="Logo 04"
+                              alt="Ejecución de órdenes"
                             />
                           </div>
                         </div>
@@ -729,7 +739,7 @@ export default function MethodologyPillars() {
                               src={Logo05}
                               width={38}
                               height={38}
-                              alt="Logo 05"
+                              alt="Timing de entrada"
                             />
                           </div>
                         </div>
@@ -742,7 +752,7 @@ export default function MethodologyPillars() {
                               src={Logo02}
                               width={28}
                               height={26}
-                              alt="Logo 02"
+                              alt="Confirmaciones"
                             />
                           </div>
                         </div>
@@ -755,7 +765,7 @@ export default function MethodologyPillars() {
                               src={Logo07}
                               width={38}
                               height={38}
-                              alt="Logo 07"
+                              alt="Gestión de trades"
                             />
                           </div>
                         </div>
@@ -768,7 +778,7 @@ export default function MethodologyPillars() {
                               src={Logo06}
                               width={38}
                               height={38}
-                              alt="Logo 06"
+                              alt="Estrategia operativa"
                             />
                           </div>
                         </div>
@@ -781,7 +791,7 @@ export default function MethodologyPillars() {
                               src={Logo09}
                               width={38}
                               height={38}
-                              alt="Logo 09"
+                              alt="Backtesting"
                             />
                           </div>
                         </div>
@@ -794,7 +804,7 @@ export default function MethodologyPillars() {
                               src={Logo08}
                               width={38}
                               height={38}
-                              alt="Logo 08"
+                              alt="Consistencia operativa"
                             />
                           </div>
                         </div>
@@ -805,6 +815,40 @@ export default function MethodologyPillars() {
               </div>
             </TabPanels>
           </TabGroup>
+
+          {/* Descripción dinámica según tab seleccionado */}
+          <div className="mt-12 text-center max-w-2xl mx-auto">
+            <p className="text-gray-600 text-base">
+              {selectedTab === 0 && (
+                <>
+                  <strong className="text-gray-900">Psicología del Trading:</strong> Domina tus emociones, 
+                  desarrolla disciplina operativa y crea un plan de trading personalizado. El 80% del éxito 
+                  en trading está en tu mente.
+                </>
+              )}
+              {selectedTab === 1 && (
+                <>
+                  <strong className="text-gray-900">Análisis Técnico Aplicado:</strong> Aprende a leer 
+                  gráficos, estructuras de mercado y patrones de price action. Fibonacci, 
+                  soportes y resistencias en contexto real, no teoría pura.
+                </>
+              )}
+              {selectedTab === 2 && (
+                <>
+                  <strong className="text-gray-900">Gestión de Riesgo Matemática:</strong> Calcula tamaño 
+                  de posición, establece stop loss y take profit con precisión. La diferencia 
+                  entre traders rentables y quebrados está en cómo gestionan cada operación.
+                </>
+              )}
+              {selectedTab === 3 && (
+                <>
+                  <strong className="text-gray-900">Estrategia y Ejecución Consistente:</strong> Identifica setups de 
+                  alta probabilidad, ejecuta con confianza y lleva un diario de trading para mejorar continuamente. 
+                  Sistema probado por +2,000 estudiantes.
+                </>
+              )}
+            </p>
+          </div>
         </div>
       </div>
     </section>

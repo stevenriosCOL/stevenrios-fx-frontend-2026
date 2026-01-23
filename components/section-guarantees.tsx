@@ -17,7 +17,7 @@ export default function Guarantees() {
         {/* Illustration */}
         <div className="absolute inset-0 -z-10 -mx-28 rounded-t-[3rem] pointer-events-none overflow-hidden" aria-hidden="true">
           <div className="absolute left-1/2 -translate-x-1/2 top-0 -z-10">
-            <Image src={Illustration} className="max-w-none" width={1404} height={658} alt="Guarantees Illustration" />
+            <Image src={Illustration} className="max-w-none" width={1404} height={658} alt="Compromiso SR Academy - Garantía de formación en trading" />
           </div>
         </div>
 
@@ -28,59 +28,173 @@ export default function Guarantees() {
             {/* Section content */}
             <div className="max-w-xl mx-auto md:max-w-none flex flex-col md:flex-row md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-8 space-y-reverse md:space-y-0">
 
-              {/* Content */}
+              {/* Content optimizado */}
               <div className="md:w-7/12 lg:w-1/2 order-1 md:order-none max-md:text-center" data-aos="fade-down">
                 {/* Badge */}
                 <div>
                   <div className="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-200 pb-3">
-                    Compromiso SR Academy
+                    Compromiso SR Academy: Formación Real, Sin Excusas
                   </div>
                 </div>
-                {/* Headline */}
+                
+                {/* Headline optimizado */}
                 <h3 className="mb-4 text-3xl font-bold md:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60">
-                  Te lo garantizo: En 8-12 meses operas como profesional
+                  Garantía de Formación Completa en{" "}
+                  <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">
+                    Trading Profesional
+                  </span>
                 </h3>
-                {/* Description */}
+                
+                {/* Description optimizada */}
                 <p className="text-lg text-slate-400 mb-8">
-                  Sigue al pie de la letra la metodología, pasa las pruebas asignadas, y estarás operando como los pro. Estamos tan seguros de nuestra calidad que si no cumples tus objetivos, <strong className="text-slate-200">ampliamos la formación sin costo adicional</strong>.
+                  Sigue al pie de la letra la{" "}
+                  <strong className="text-slate-200">metodología de trading</strong>, 
+                  completa las{" "}
+                  <strong className="text-slate-200">pruebas asignadas</strong>, 
+                  y en <strong className="text-slate-200">8-12 meses</strong> estarás 
+                  operando con{" "}
+                  <strong className="text-slate-200">análisis técnico profesional</strong> y{" "}
+                  <strong className="text-slate-200">gestión de riesgo estructurada</strong>. 
+                  Estamos tan seguros de nuestra{" "}
+                  <strong className="text-slate-200">calidad educativa</strong> que 
+                  si cumples con tu parte y no alcanzas competencia operativa,{" "}
+                  <strong className="text-slate-200">
+                    ampliamos la formación sin costo adicional
+                  </strong>.
                 </p>
 
-                {/* Tabs */}
+                {/* Disclaimer YMYL-safe (NUEVO) */}
+                <div className="mb-8 p-4 bg-slate-800/50 border border-slate-700 rounded-lg">
+                  <p className="text-sm text-slate-400">
+                    <strong className="text-slate-300">⚠️ Importante:</strong>{" "}
+                    Esta garantía cubre la{" "}
+                    <strong className="text-slate-300">formación y acceso</strong>, 
+                    NO resultados financieros. El trading tiene riesgo de pérdida. 
+                    Los resultados dependen de tu{" "}
+                    <strong className="text-slate-300">disciplina</strong>,{" "}
+                    <strong className="text-slate-300">práctica</strong> y{" "}
+                    <strong className="text-slate-300">gestión de capital</strong>.
+                  </p>
+                </div>
+
+                {/* Tabs optimizados */}
                 <div className="mt-8 max-w-xs max-md:mx-auto space-y-2">
                   
                   <button 
                     className={`flex items-center text-sm font-medium text-slate-50 rounded-sm border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100 ${tab !== 1 ? 'border-slate-700 opacity-50' : 'border-blue-700 shadow-sm shadow-blue-500/25'}`} 
                     onClick={() => setTab(1)}
+                    aria-label="Ver garantía de resultados educativos"
                   >
                     <svg className="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                       <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm3.5 5.5-4 4a.7.7 0 0 1-1 0l-2-2a.7.7 0 1 1 1-1L7 8l3.5-3.5a.7.7 0 1 1 1 1Z" />
                     </svg>
-                    <span>Garantía de resultados</span>
+                    <span>Garantía de Formación Completa</span>
                   </button>
 
                   <button 
                     className={`flex items-center text-sm font-medium text-slate-50 rounded-sm border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100 ${tab !== 2 ? 'border-slate-700 opacity-50' : 'border-blue-700 shadow-sm shadow-blue-500/25'}`} 
                     onClick={() => setTab(2)}
+                    aria-label="Ver contenido completo de formación"
                   >
                     <svg className="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                       <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12Zm0 14V2H2v12h12Zm-3-7H5a1 1 0 1 1 0-2h6a1 1 0 0 1 0 2Zm0 4H5a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z" />
                     </svg>
-                    <span>Formación completa</span>
+                    <span>Contenido Estructurado Completo</span>
                   </button>
 
                   <button 
                     className={`flex items-center text-sm font-medium text-slate-50 rounded-sm border bg-slate-800/25 w-full px-3 py-2 transition duration-150 ease-in-out hover:opacity-100 ${tab !== 3 ? 'border-slate-700 opacity-50' : 'border-blue-700 shadow-sm shadow-blue-500/25'}`} 
                     onClick={() => setTab(3)}
+                    aria-label="Ver mentoría y soporte directo"
                   >
                     <svg className="shrink-0 fill-slate-300 mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                       <path d="M2 6H0V2a2 2 0 0 1 2-2h4v2H2v4ZM16 6h-2V2h-4V0h4a2 2 0 0 1 2 2v4ZM14 16h-4v-2h4v-4h2v4a2 2 0 0 1-2 2ZM6 16H2a2 2 0 0 1-2-2v-4h2v4h4v2Z" />
                     </svg>
-                    <span>Soporte directo</span>
+                    <span>Mentoría y Soporte Activo</span>
                   </button>
+                </div>
+
+                {/* Explicación del tab seleccionado (NUEVO) */}
+                <div className="mt-6 p-4 bg-slate-800/30 border border-slate-700/50 rounded-lg">
+                  <Transition
+                    show={tab === 1}
+                    enter="transition-opacity duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-150"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="text-sm text-slate-300">
+                      <strong className="text-slate-100 block mb-2">
+                        📋 Garantía Educativa SR Academy
+                      </strong>
+                      <p>
+                        Si cumples con el{" "}
+                        <strong className="text-slate-200">100% del programa</strong> 
+                        (clases + ejercicios + evaluaciones) y no alcanzas competencia 
+                        operativa en 8-12 meses, extendemos tu acceso hasta que lo logres. 
+                        Sin pagos extra. Requiere evidencia de{" "}
+                        <strong className="text-slate-200">
+                          journaling de trades y asistencia
+                        </strong> a sesiones.
+                      </p>
+                    </div>
+                  </Transition>
+
+                  <Transition
+                    show={tab === 2}
+                    enter="transition-opacity duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-150"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="text-sm text-slate-300">
+                      <strong className="text-slate-100 block mb-2">
+                        📚 Formación Completa Paso a Paso
+                      </strong>
+                      <p>
+                        <strong className="text-slate-200">500+ horas</strong> de contenido 
+                        estructurado: Psicología del trader, análisis técnico con Fibonacci, 
+                        gestión de riesgo matemática, estrategia de ejecución. 
+                        Incluye plantillas, checklists y{" "}
+                        <strong className="text-slate-200">
+                          material descargable
+                        </strong>. Actualizaciones futuras incluidas de por vida.
+                      </p>
+                    </div>
+                  </Transition>
+
+                  <Transition
+                    show={tab === 3}
+                    enter="transition-opacity duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-150"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <div className="text-sm text-slate-300">
+                      <strong className="text-slate-100 block mb-2">
+                        💬 Soporte Directo y Comunidad Activa
+                      </strong>
+                      <p>
+                        Acceso a Discord 24/7 con{" "}
+                        <strong className="text-slate-200">+2,000 traders activos</strong>,{" "}
+                        <strong className="text-slate-200">
+                          sesiones en vivo semanales
+                        </strong> con análisis de mercado, mentoría grupal y 
+                        respuestas directas a tus dudas operativas. No estás solo: 
+                        construimos tu consistencia en comunidad.
+                      </p>
+                    </div>
+                  </Transition>
                 </div>
               </div>
 
-              {/* Image */}
+              {/* Image - Sin cambios visuales */}
               <div className="md:w-5/12 lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
                 <div className="relative py-32 md:py-24 md:-mt-12">
 
@@ -114,7 +228,7 @@ export default function Guarantees() {
                         </div>
                       </div>
                       
-                      {/* Icons */}
+                      {/* Icons - Sin cambios */}
                       <Transition
                         as="div"
                         show={tab === 1}

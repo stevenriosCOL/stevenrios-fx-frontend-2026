@@ -1,7 +1,9 @@
 import "./css/style.css";
-
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+
+// 🎯 IMPORTAR METADATA DESDE ARCHIVO CENTRALIZADO
+import { metadata as globalMetadata } from "./metadata";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,38 +11,60 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata = {
-  title: "SR Academy | Trading, Cripto y Finanzas",
-  description:
-    "Formación completa en trading, criptomonedas, psicología del trader y finanzas personales. Más de 2,000 estudiantes en 60+ países.",
-  // ✅ AGREGADO: Verificación de Google Search Console
-  verification: {
-    google: "o1yixiRBB8xYhEbOGc24fEaxNcrY2mq6eMCRnUFfzUw",
-  },
-};
+// ✅ EXPORTAR METADATA (viene del archivo metadata.ts)
+export const metadata = globalMetadata;
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // ============================================
+  // 🏢 SCHEMA.ORG (Rich Snippets Google)
+  // ============================================
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     name: "SR Academy",
+    alternateName: "Steven Rios FX",
     description:
-      "Academia de trading profesional especializada en Forex, Oro y Criptomonedas",
-    url: "https://stevenriosfx.com",
-    logo: "https://stevenriosfx.com/images/logo-sr-academy-2026.svg",
+      "Academia de trading profesional especializada en Forex, Oro (XAUUSD) y Criptomonedas. Metodología con psicología del trading y gestión de riesgo.",
+    url: "https://www.stevenriosfx.com",
+    logo: "https://www.stevenriosfx.com/images/logo-sr-academy-2026.svg",
+    image: "https://www.stevenriosfx.com/images/og-image.jpg",
+    
+    // 🌍 REDES SOCIALES
     sameAs: [
       "https://instagram.com/stevenrios.fx",
       "https://instagram.com/sracademyoficial",
       "https://kick.com/stevenriosfx",
       "https://es.tradingview.com/u/StevenRiosFx",
     ],
+    
+    // 👤 FUNDADOR
     founder: {
       "@type": "Person",
       name: "Steven Rios",
+      url: "https://www.stevenriosfx.com/about",
+      sameAs: [
+        "https://instagram.com/stevenrios.fx",
+        "https://es.tradingview.com/u/StevenRiosFx",
+      ],
+    },
+    
+    // 📍 UBICACIÓN (si aplica, ajusta o elimina)
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "CO",
+    },
+    
+    // ⭐ RATING (si tienes reseñas verificables)
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "487",
+      bestRating: "5",
+      worstRating: "1",
     },
   };
 
@@ -49,7 +73,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
-        {/* JSON-LD Schema (Rich Snippets) */}
+        {/* ============================================ */}
+        {/* 🎯 JSON-LD SCHEMA (Rich Snippets Google)     */}
+        {/* ============================================ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -59,7 +85,12 @@ export default function RootLayout({
           {children}
         </div>
 
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
+        {/* ============================================ */}
+        {/* 📊 GOOGLE ANALYTICS                          */}
+        {/* ============================================ */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
       </body>
     </html>
   );
