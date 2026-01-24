@@ -2,8 +2,11 @@ import "./css/style.css";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-// 🎯 IMPORTAR METADATA DESDE ARCHIVO CENTRALIZADO
+// 🎯 METADATA CENTRALIZADA
 import { metadata as globalMetadata } from "./metadata";
+
+// 🏢 SCHEMA REUTILIZABLE
+import { organizationSchema } from "@/utils/schemas/organization";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,7 +14,7 @@ const inter = Inter({
   display: "swap",
 });
 
-// ✅ EXPORTAR METADATA (viene del archivo metadata.ts)
+// ✅ EXPORTAR METADATA
 export const metadata = globalMetadata;
 
 export default function RootLayout({
@@ -20,53 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   // ============================================
-  // 🏢 SCHEMA.ORG (Rich Snippets Google)
+  // 🏢 SCHEMA.ORG (ahora viene de utils/schemas)
   // ============================================
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    name: "SR Academy",
-    alternateName: "Steven Rios FX",
-    description:
-      "Academia de trading profesional especializada en Forex, Oro (XAUUSD) y Criptomonedas. Metodología con psicología del trading y gestión de riesgo.",
-    url: "https://www.stevenriosfx.com",
-    logo: "https://www.stevenriosfx.com/images/logo-sr-academy-2026.svg",
-    image: "https://www.stevenriosfx.com/images/og-image.jpg",
-    
-    // 🌍 REDES SOCIALES
-    sameAs: [
-      "https://instagram.com/stevenrios.fx",
-      "https://instagram.com/sracademyoficial",
-      "https://kick.com/stevenriosfx",
-      "https://es.tradingview.com/u/StevenRiosFx",
-    ],
-    
-    // 👤 FUNDADOR
-    founder: {
-      "@type": "Person",
-      name: "Steven Rios",
-      url: "https://www.stevenriosfx.com/about",
-      sameAs: [
-        "https://instagram.com/stevenrios.fx",
-        "https://es.tradingview.com/u/StevenRiosFx",
-      ],
-    },
-    
-    // 📍 UBICACIÓN (si aplica, ajusta o elimina)
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "CO",
-    },
-    
-    // ⭐ RATING (si tienes reseñas verificables)
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "487",
-      bestRating: "5",
-      worstRating: "1",
-    },
-  };
+  const jsonLd = organizationSchema();
 
   return (
     <html lang="es" className="scroll-smooth">

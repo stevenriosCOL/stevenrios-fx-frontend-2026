@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/signin', '/api/', '/dashboard/'],
     },
-    sitemap: 'https://stevenriosfx.com/sitemap.xml',
+    sitemap: 'https://www.stevenriosfx.com/sitemap.xml',
   }
 }
