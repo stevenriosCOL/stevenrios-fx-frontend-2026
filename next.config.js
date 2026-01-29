@@ -52,7 +52,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://elfsightcdn.com https://universe-static.elfsightcdn.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://elfsightcdn.com https://universe-static.elfsightcdn.com",
-              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://elfsightcdn.com https://universe-static.elfsightcdn.com https://core.service.elfsight.com https://api.elfsight.com https://widget-data.service.elfsightcdn.com https://vercel.live https://app.stevenriosfx.com",
+              "connect-src 'self' https://www.google-analytics.com https://*.supabase.co https://api.brevo.com https://elfsightcdn.com https://universe-static.elfsightcdn.com https://core.service.elfsight.com https://api.elfsight.com https://widget-data.service.elfsightcdn.com https://widget-data.service.elfsight.com https://vercel.live https://app.stevenriosfx.com",
               "frame-src 'self' https://apps.elfsight.com https://elfsightcdn.com https://vercel.live",
               "worker-src 'self' blob:",
             ].join("; "),
