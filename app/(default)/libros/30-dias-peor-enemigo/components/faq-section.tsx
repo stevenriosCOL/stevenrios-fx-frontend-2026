@@ -3,12 +3,39 @@
 import Accordion from "@/components/accordion";
 
 export default function FaqSection() {
+  const WHATSAPP_COMBO = "https://wa.link/x84llp";
+
   const faqs = [
     {
       question: "¿Qué estoy comprando exactamente?",
       answer:
-        "Un sistema PDF premium con 30 días guiados para reprogramar tu ejecución: conceptos diarios, ejercicios prácticos y estructura mental aplicable directamente al trading real.",
+        "Un sistema completo de reprogramación mental para trading: PDF premium con 30 días guiados, estructura diaria, ejercicios prácticos y acompañamiento para que ejecutes con disciplina bajo presión.",
       active: true,
+    },
+    {
+      question: "¿Qué incluye el Combo Premium exactamente?",
+      answer:
+        "Incluye: PDF Premium + Audiolibro (MP3) + GPT SR FX Trading Brain + curso gratis 12h + ejercicios guiados + WhatsApp de estudiantes.",
+    },
+    {
+      question: "¿El audiolibro se vende por separado?",
+      answer:
+        "No. El audiolibro es un beneficio exclusivo del Combo Premium. La idea es que tengas el sistema completo (leer + escuchar + ejecutar) y lo sostengas con consistencia.",
+    },
+    {
+      question: "¿Cómo recibo el PDF y el audiolibro?",
+      answer:
+        "Después de la compra, te enviamos todo por correo electrónico: acceso al PDF premium y el audiolibro en formato MP3, más los recursos/bonos incluidos.",
+    },
+    {
+      question: "¿En qué formato viene el audiolibro y en qué dispositivos funciona?",
+      answer:
+        "Viene en MP3. Lo puedes escuchar en celular, computadora, carro o cualquier reproductor estándar (iPhone/Android/PC/Mac).",
+    },
+    {
+      question: "¿Qué es el GPT SR FX Trading Brain y cómo lo uso?",
+      answer:
+        "SR FX – Trading Brain (Hedge Fund Thinking), por Steven Andrés Ríos Chitiva. Es un asistente profesional creado para ayudarte a pensar, estructurar y ejecutar como un trader institucional: proceso, contexto, riesgo y toma de decisiones. No da señales ni predicciones. Lo usas para preparar tu plan, validar tu contexto y tomar decisiones con criterio.",
     },
     {
       question: "¿Esto sirve si ya tengo estrategia?",
@@ -31,14 +58,9 @@ export default function FaqSection() {
         "Entre 7 y 15 minutos diarios. Es corto, práctico y fácil de sostener durante los 30 días completos.",
     },
     {
-      question: "¿Cómo recibo el libro?",
-      answer:
-        "Recibes el PDF premium por WhatsApp o enlace directo inmediatamente después de la compra. Acceso instantáneo.",
-    },
-    {
       question: "¿Qué incluye el bonus de +12 horas?",
       answer:
-        "Acceso a un curso completo de más de 12 horas como complemento de formación para reforzar fundamentos y estructura profesional.",
+        'Acceso al curso gratuito de más de 12 horas para reforzar fundamentos y estructura profesional. Disponible en: stevenriosfx.com/curso-gratis',
     },
     {
       question: "¿Qué es el WhatsApp inteligente de estudiantes?",
@@ -58,7 +80,7 @@ export default function FaqSection() {
     {
       question: "¿Qué compromiso ofrece SR Academy?",
       answer:
-        "Si después de aplicar el sistema sientes que algo no te queda claro, tienes acceso directo al soporte para resolver cualquier duda. Incluye WhatsApp de estudiantes, +12 horas de curso complementario y actualizaciones gratuitas del contenido.",
+        "Si después de aplicar el sistema sientes que algo no te queda claro, tienes acceso directo al soporte para resolver cualquier duda sobre implementación. Incluye WhatsApp de estudiantes, curso complementario y actualizaciones gratuitas del contenido.",
     },
   ];
 
@@ -66,7 +88,6 @@ export default function FaqSection() {
     <section id="faq">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-16 md:py-20 border-t [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.4),transparent)1]">
-          
           {/* Header MEJORADO */}
           <div className="mx-auto max-w-3xl text-center mb-12">
             <div className="inline-flex font-medium bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent mb-3">
@@ -80,9 +101,7 @@ export default function FaqSection() {
             <p className="text-lg text-gray-700">
               Resolvemos las dudas reales que todo trader serio se hace antes de invertir.
               <br className="hidden sm:block" />
-              <span className="text-gray-600">
-                Sin humo. Sin promesas falsas.
-              </span>
+              <span className="text-gray-600">Sin humo. Sin promesas falsas.</span>
             </p>
           </div>
 
@@ -94,14 +113,8 @@ export default function FaqSection() {
                   key={index}
                   className="rounded-2xl border border-gray-200 bg-white shadow-sm hover:border-blue-200 transition-colors duration-300"
                 >
-                  <Accordion
-                    title={faq.question}
-                    id={`faq-${index}`}
-                    active={faq.active}
-                  >
-                    <span className="text-gray-700 leading-relaxed">
-                      {faq.answer}
-                    </span>
+                  <Accordion title={faq.question} id={`faq-${index}`} active={faq.active}>
+                    <span className="text-gray-700 leading-relaxed">{faq.answer}</span>
                   </Accordion>
                 </div>
               ))}
@@ -112,7 +125,7 @@ export default function FaqSection() {
               <p className="text-gray-600 mb-6">
                 ¿Todavía tienes dudas?{" "}
                 <a
-                  href="https://wa.link/rmdrzg"
+                  href={WHATSAPP_COMBO}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600 hover:text-blue-700"
@@ -126,13 +139,13 @@ export default function FaqSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 className="btn group bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]"
-                href="https://wa.link/rmdrzg"
+                href={WHATSAPP_COMBO}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="inline-flex items-center">
-                  Comprar ahora
-                  <span className="ml-1 text-blue-300 transition-transform group-hover:translate-x-0.5">
+                  Comprar Combo Premium
+                  <span className="ml-1 text-blue-300 transition-transform group-hover:translate cracker-x-0.5">
                     →
                   </span>
                 </span>
@@ -140,9 +153,7 @@ export default function FaqSection() {
 
               <button
                 className="btn bg-white text-gray-800 shadow hover:bg-gray-50"
-                onClick={() =>
-                  document.getElementById("offer")?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => document.getElementById("offer")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Ver lo que incluye
               </button>
@@ -153,6 +164,7 @@ export default function FaqSection() {
     </section>
   );
 }
+
 
 
 

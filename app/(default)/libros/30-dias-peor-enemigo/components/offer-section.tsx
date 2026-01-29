@@ -13,6 +13,9 @@ export default function OfferSection() {
   const TOTAL_SECONDS = 3600 * 6; // 6h urgency
   const [timeLeft, setTimeLeft] = useState(TOTAL_SECONDS);
 
+  // ✅ Link COMBO
+  const WHATSAPP_COMBO = "https://wa.link/x84llp";
+
   useEffect(() => {
     const t = setInterval(() => setTimeLeft((p) => (p > 0 ? p - 1 : 0)), 1000);
     return () => clearInterval(t);
@@ -34,11 +37,10 @@ export default function OfferSection() {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 py-16 md:py-20">
-        
         {/* Header CON BADGE */}
         <div className="mx-auto max-w-3xl text-center mb-10 md:mb-12">
           <div className="inline-flex bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent font-semibold mb-3">
-            Oferta de lanzamiento
+            Oferta de lanzamiento (Combo Premium)
           </div>
 
           <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
@@ -46,19 +48,15 @@ export default function OfferSection() {
           </h2>
 
           <p className="text-lg text-slate-400">
-            No compras solo un libro. Compras un sistema completo de reprogramación mental.
+            Esto no es “solo un libro”. Es un sistema completo para reprogramar tu mente de trader.
           </p>
         </div>
 
         {/* MOSAICO DE MOCKUPS */}
         <div className="mx-auto max-w-4xl mb-12 md:mb-14">
           <div className="relative aspect-[4/3] w-full">
-
             {/* Principal (centro) */}
-            <figure
-              className="relative mx-auto z-10"
-              style={{ width: "82%", maxWidth: 860 }}
-            >
+            <figure className="relative mx-auto z-10" style={{ width: "82%", maxWidth: 860 }}>
               <div className="relative -rotate-2 overflow-hidden rounded-2xl border border-slate-700/60 bg-slate-900/30 shadow-2xl">
                 <Image
                   src={MockupMain}
@@ -126,21 +124,19 @@ export default function OfferSection() {
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/25 via-transparent to-transparent" />
               </div>
             </figure>
-
           </div>
         </div>
 
         {/* CONTENIDO PRINCIPAL */}
         <div className="mx-auto max-w-3xl">
           <div className="rounded-3xl border border-slate-700/60 bg-slate-800/40 p-7 md:p-9">
-
             {/* Headline */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-100">
-                Esto es lo que recibes al comprar hoy
+                Esto es lo que recibes en el Combo Premium
               </h3>
               <p className="mt-2 text-slate-400">
-                No es "otro PDF". Es un sistema listo para ejecutar y medir progreso.
+                No es “otro PDF”. Es un sistema listo para ejecutar, medir progreso y sostener disciplina.
               </p>
             </div>
 
@@ -156,6 +152,27 @@ export default function OfferSection() {
                   "Lectura rápida, aplicación inmediata",
                 ]}
               />
+
+              <div className="grid gap-4 md:grid-cols-2">
+                <BundleCard
+                  title="BONUS: Audiolibro (Acceso inmediato)"
+                  tag="Bonus"
+                  text="Escúchalo cuando quieras: caminando, en el gym o antes de operar."
+                  bullets={[
+                    "Refuerzo diario sin esfuerzo",
+                    "Ideal para interiorizar conceptos",
+                  ]}
+                />
+                <BundleCard
+                  title="BONUS: GPT SR FX Trading Brain"
+                  tag="Bonus"
+                  text="Asistente profesional de trading para pensar y ejecutar como institucional."
+                  bullets={[
+                    "Estructura de proceso (sin señales)",
+                    "Checklist de riesgo y contexto",
+                  ]}
+                />
+              </div>
 
               <div className="grid gap-4 md:grid-cols-2">
                 <BundleCard
@@ -196,16 +213,16 @@ export default function OfferSection() {
                 <div>
                   <p className="text-sm text-slate-400">Valor total del paquete</p>
                   <p className="text-2xl font-bold text-slate-200 line-through decoration-slate-500/60">
-                    $29.99
+                    $44.98
                   </p>
                 </div>
                 <div className="text-left sm:text-right">
                   <p className="text-sm font-semibold text-blue-300">Hoy (lanzamiento)</p>
                   <p className="text-4xl md:text-5xl font-bold text-slate-100">
-                    $19<span className="text-2xl text-slate-300">.99</span>
+                    $29<span className="text-2xl text-slate-300">.99</span>
                   </p>
                   <p className="text-sm text-slate-400">
-                    Ahorras <span className="font-semibold text-blue-300">$10</span>
+                    Ahorras <span className="font-semibold text-blue-300">$14.99</span>
                   </p>
                 </div>
               </div>
@@ -225,57 +242,71 @@ export default function OfferSection() {
               </div>
             </div>
 
-{/* COMPROMISO SR ACADEMY */}
-<div className="mt-6 rounded-2xl border border-blue-700/40 bg-blue-950/20 p-5">
-  <div className="flex items-start gap-4">
-    <div className="shrink-0">
-      <svg className="h-10 w-10 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-      </svg>
-    </div>
-    <div>
-      <p className="text-lg font-bold text-slate-100 mb-1">
-        Compromiso SR Academy
-      </p>
-      <p className="text-slate-300">
-        Si después de aplicar el sistema sientes que algo no te queda claro,{" "}
-        <strong className="text-slate-100">tienes acceso directo al soporte</strong>{" "}
-        para resolver cualquier duda sobre implementación.
-      </p>
-      <ul className="mt-3 space-y-2 text-sm text-slate-400">
-        <li className="flex items-center gap-2">
-          <svg className="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
-          WhatsApp de estudiantes incluido
-        </li>
-        <li className="flex items-center gap-2">
-          <svg className="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
-          +12 horas de curso complementario
-        </li>
-        <li className="flex items-center gap-2">
-          <svg className="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
-          Actualizaciones gratuitas del contenido
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+            {/* COMPROMISO SR ACADEMY */}
+            <div className="mt-6 rounded-2xl border border-blue-700/40 bg-blue-950/20 p-5">
+              <div className="flex items-start gap-4">
+                <div className="shrink-0">
+                  <svg className="h-10 w-10 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-lg font-bold text-slate-100 mb-1">Compromiso SR Academy</p>
+                  <p className="text-slate-300">
+                    Si después de aplicar el sistema sientes que algo no te queda claro,{" "}
+                    <strong className="text-slate-100">tienes acceso directo al soporte</strong>{" "}
+                    para resolver cualquier duda sobre implementación.
+                  </p>
+                  <ul className="mt-3 space-y-2 text-sm text-slate-400">
+                    <li className="flex items-center gap-2">
+                      <svg className="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      WhatsApp de estudiantes incluido
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg className="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      +12 horas de curso complementario
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <svg className="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      Actualizaciones gratuitas del contenido
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
             {/* CTAs */}
             <div className="mt-7 flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 className="btn group bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]"
-                href="https://wa.link/rmdrzg"
+                href={WHATSAPP_COMBO}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="inline-flex items-center">
-                  Comprar ahora
+                  Obtener el Combo ahora
                   <span className="ml-1 text-blue-300 group-hover:translate-x-0.5 transition-transform">
                     →
                   </span>
@@ -284,34 +315,38 @@ export default function OfferSection() {
 
               <button
                 className="btn bg-white text-gray-800 shadow hover:bg-gray-50"
-                onClick={() =>
-                  document.getElementById("preview")?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => document.getElementById("preview")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Ver Vista Previa
               </button>
             </div>
 
-            {/* Micro-copy MEJORADO */}
+            {/* Micro-copy */}
             <p className="mt-5 text-center text-sm text-slate-500">
               Todo es digital. Acceso inmediato tras la compra.
               <br />
-              <span className="text-slate-400">
-                No esperas envíos. Empiezas hoy mismo.
-              </span>
+              <span className="text-slate-400">No esperas envíos. Empiezas hoy mismo.</span>
             </p>
 
-            {/* Trust badges - AGREGADOS */}
+            {/* Trust badges */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-slate-500">
               <div className="flex items-center gap-2">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                  <path
+                    fillRule="evenodd"
+                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                    clipRule="evenodd"
+                  />
                 </svg>
                 <span className="text-sm">Pago seguro</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
                 </svg>
                 <span className="text-sm">Entrega inmediata</span>
               </div>
@@ -323,10 +358,8 @@ export default function OfferSection() {
                 <span className="text-sm">Soporte incluido</span>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );
@@ -357,9 +390,7 @@ function BundleCard({
     <div className="rounded-2xl border border-slate-700/60 bg-slate-900/30 p-5">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <div className="text-lg md:text-xl font-bold text-slate-100">
-            {title}
-          </div>
+          <div className="text-lg md:text-xl font-bold text-slate-100">{title}</div>
           <div className="mt-1 text-slate-400">{text}</div>
         </div>
 
@@ -383,6 +414,7 @@ function BundleCard({
     </div>
   );
 }
+
 
 
 

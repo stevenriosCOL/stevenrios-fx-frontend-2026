@@ -1,6 +1,8 @@
 "use client";
 
 export default function CtaSection() {
+  const WHATSAPP_COMBO = "https://wa.link/x84llp";
+
   return (
     <section id="cta-final">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -31,7 +33,7 @@ export default function CtaSection() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span>Precio de lanzamiento: $19.99 (tiempo limitado)</span>
+              <span>Combo Premium: $29.99 (tiempo limitado)</span>
             </div>
           </div>
 
@@ -41,10 +43,10 @@ export default function CtaSection() {
 
               {/* Bullets */}
               <div className="mx-auto max-w-2xl space-y-3 text-left">
-                <MiniPoint text="30 días guiados (7–15 min al día) con estructura real y ejercicios accionables." />
-                <MiniPoint text="Reprogramación de patrones mentales bajo presión (no solo teoría)." />
-                <MiniPoint text="Acceso inmediato + bonus de +12 horas + WhatsApp inteligente." />
-                <MiniPoint text="Compromiso SR Academy: soporte directo + actualizaciones gratuitas." />
+                <MiniPoint text="PDF Premium + 30 días guiados (7–15 min al día) con estructura real y ejercicios accionables." />
+                <MiniPoint text="Audiolibro (MP3) para repetir el sistema mientras caminas, manejas o entrenas." />
+                <MiniPoint text="GPT SR FX Trading Brain: piensa y estructura como trader institucional (sin señales ni predicciones)." />
+                <MiniPoint text="Bonus: curso gratis 12h + WhatsApp de estudiantes + soporte y actualizaciones." />
               </div>
 
               {/* Social proof */}
@@ -63,12 +65,12 @@ export default function CtaSection() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   className="btn group bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%]"
-                  href="https://wa.link/rmdrzg"
+                  href={WHATSAPP_COMBO}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="inline-flex items-center">
-                    Comprar ahora
+                    Comprar Combo Premium
                     <span className="ml-1 text-blue-300 transition-transform group-hover:translate-x-0.5">
                       →
                     </span>
@@ -87,14 +89,15 @@ export default function CtaSection() {
 
               {/* Trust microcopy */}
               <p className="mt-5 text-sm text-gray-600">
-                Acceso inmediato por WhatsApp. PDF Premium descargable. Sin suscripciones ni pagos recurrentes.
+                Acceso digital inmediato. Entrega por correo electrónico (PDF Premium + Audiolibro MP3 + recursos).
+                Sin suscripciones ni pagos recurrentes.
               </p>
 
               {/* Honest note */}
               <div className="mt-8 rounded-2xl border-l-4 border-gray-300 bg-gray-50 p-5 text-left">
                 <p className="text-sm text-gray-700">
                   <strong className="text-gray-900">Última nota honesta:</strong>{" "}
-                  Este libro no hace el trabajo por ti. Si esperas una solución mágica, no compres.
+                  Este sistema no hace el trabajo por ti. Si esperas una solución mágica, no compres.
                   Pero si estás dispuesto a trabajar tu mente 15 minutos al día durante 30 días,{" "}
                   <strong className="text-gray-900">esto cambia tu ejecución</strong>.
                 </p>
@@ -120,5 +123,6 @@ function MiniPoint({ text }: { text: string }) {
     </div>
   );
 }
+
 
 
